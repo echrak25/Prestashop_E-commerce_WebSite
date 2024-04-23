@@ -1,0 +1,21 @@
+.ybc-blog-post-footer .read_more:hover
+{
+    background:[color];
+    border-color:[color];
+}
+.ybc-blog-like-span.active, .be-tag-block .be-tags a, .be-tag-block .be-tags,
+.ybc-blog-related-posts-meta-categories > a {
+  color:[color];
+}
+.ybc-blog-form-comment .blog-submit .button
+{
+  background:[color]; 
+}
+a:hover, .ybc-blog-like-span:hover, .ybc-block-comment-report:hover{
+    color: [color];
+}
+.nivo-caption 
+{
+     background:[color]; 
+     opacity:0.6;
+}

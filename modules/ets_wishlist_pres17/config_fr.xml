@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ets_wishlist_pres17</name>
+    <displayName><![CDATA[Advanced Wish list]]></displayName>
+    <version><![CDATA[1.0.4]]></version>
+    <description><![CDATA[Advanced wish list for PrestaShop 1.7.x websites]]></description>
+    <author><![CDATA[PrestaHero]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

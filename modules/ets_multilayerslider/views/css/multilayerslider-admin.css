@@ -1,0 +1,1698 @@
+body{
+  background: #fff;
+}
+.mls_export_form{
+  float: left;
+  margin-top: 450px;
+}
+.mls_sample_effect {
+  animation-duration: 1500ms;
+  -webkit-animation-duration: 1500ms;
+  background-color: #EEEEEE;
+  display: none;
+  float: right;
+  font-weight: bold;
+  left: 220px;
+  padding: 7px 15px;
+  position: absolute;
+  top: 0;
+  width: auto;
+  z-index: 100;
+}
+.row_ets_mls_hook_to .help-block{
+  display: none;
+}
+.row_ets_mls_hook_to .help-block.active{
+  display: block;
+}
+.mls_slides_actions {
+  background: #eee;
+  margin: 15px;
+  padding: 10px 15px;
+  display: flex;
+}
+
+.mls_slides_actions > div {
+  margin-right: 15px;
+}
+
+.mls_slides_actions .mls_config_button,.mls_slides_actions .mls_export_button.btn.btn-default {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+/*.process-icon-delete::before {
+    content: "\f01d"!important;
+  font-family: Material Icons;
+}*/
+.layer_transition_form {
+  overflow: hidden;
+}
+#ets_mls_slide_form .panel .form-wrapper {
+  overflow: hidden;
+}
+.mls_sample_effect.active{
+  display: block;
+}
+body .ets_multilayerslider {
+  display: block;
+  position: relative;
+  min-height: 0;
+}
+.mls_saving_enabled .mls_config_save {
+  display: none;
+}
+.mls_import_option_form .mls_import_slider, .mls_import_option_form.active .mls_import_slider_loading{
+  display: block;
+}
+.mls_import_option_form.active .mls_import_slider,
+.mls_import_option_form.active .mls_import_slider_submit > i,
+.mls_import_option_form .mls_import_slider_loading{
+  display: none;
+}
+.mls_preview_slider .ets_multilayerslider {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.mls_preview_slider .mls_slides:before{
+  display: none;
+}
+.ets_multilayerslider.hidden {
+  display: block !important;
+}
+.msl_layer_wrapper {
+  background-position: center center;
+  background-size: 100% auto;
+  height: 100%;
+  position: relative;
+  transform-origin: 0 0 0;
+  width: 100%;
+}
+.mls_config_button:before {
+  content: "\f013";
+  font-family: FontAwesome;
+  margin-right: 4px;
+}
+.mls_slides li, .mls_slides ul {
+  background-position: center center;
+  background-size: 100% auto;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+.ets_multilayerslider .mls_slides_li .right-block .mls_add_layer:hover {
+  background-color: rgba(0, 0, 0, 0)!important;
+  color: #00AFF0;
+}
+.msl_layer_wrapper span {
+  display: block;
+  line-height: 160%;
+}
+.fa-download:before {
+  content: "\f019";
+  font-family: FontAwesome;
+  font-style: normal;
+  margin-right: 3px;
+}
+.fa-compress:before {
+  content: "\f066";
+  font-family: FontAwesome;
+  font-style: normal;
+  margin-right: 3px;
+}
+.fa-exchange:before{
+  content:"\f0ec";
+  font-family: FontAwesome;
+  font-style: normal;
+  margin-right: 3px;
+}
+.mls_slides .mls_slides_ul {
+  border-bottom: 1px solid #D0D0D0;
+  float: left;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.mls_import_slider_submit i {
+  left: 7px;
+  pointer-events: none;
+  position: absolute;
+}
+.mls_import_slider_submit:hover i:before {
+  color: #FFFFFF;
+}
+.mls_import_slider_submit .mls_import_slider {
+  float: left;
+  padding-left: 22px;
+}
+.mls_import_slider_submit {
+  border-radius: 3px 3px 3px 3px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -moz-flex;
+  line-height: 28px;
+  padding: 0;
+  position: relative;
+}
+.mls_slides:before {
+  border-bottom: 1px solid #D0D0D0;
+  bottom: 0;
+  content: "";
+  left: 15px;
+  position: absolute;
+  right: 20px;
+}
+.mls_slides {
+  float: left;
+  padding-left: 15px;
+  padding-right: 20px;
+  position: relative;
+  width: 100%;
+}
+.mls_slides > .mls_slides_ul {
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  margin-right: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  margin-top: -35px;
+  float: left;
+}
+.mls_slides > .mls_slides_ul:before {
+  background-color: #ddd;
+  content: "";
+  height: 1px;
+  left: 0;
+  margin-top: 5px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.mls_nav > div.mls_prev {
+  transform: translateX(-100%) translateY(-50%);
+  -webkit-transform: translateX(-100%) translateY(-50%);
+}
+.mls_nav > div.mls_next {
+  transform: translateX(100%) translateY(-50%);
+  -webkit-transform: translateX(100%) translateY(-50%);
+}
+.mls_slides_li.open .title-silde,
+.mls_slides_li .title-silde:hover {
+  color: #2EACCE;
+}
+.ets_multilayerslider a:hover,
+.ets_multilayerslider a:focus {
+  text-decoration: none;
+}
+.mls_slides_li_content {
+  line-height: 24px;
+  position: relative;
+}
+.mls_slide_name {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 4px 10px;
+}
+.mls_slides .mls_add_slide {
+  border: 1px solid #FFFFFF;
+  border-radius: 3px 3px 3px 3px;
+  color: #363A41;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 7px !important;
+  margin-right: 0;
+  margin-top: 7px !important;
+  padding: 6px 10px;
+  position: relative;
+  z-index: 10;
+}
+.mls_slides > div:not(:first-child):after {
+  background-color: #DDDDDD;
+
+  height: 15px;
+  left: auto;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%) translateY(-50%);
+  -webkit-transform: translateY(-50%) translateY(-50%);
+  width: 1px;
+}
+.ets_multilayerslider .mls_slides > div {
+  color: #555555;
+  margin: 0 5px;
+  transform-origin: 0 0 0;
+}
+.ets_multilayerslider .mls_slides > div:not(.mls_add_slide) {
+  border-color: #D0D0D0;
+}
+.mls_form_preview .ets_multilayerslider .mls_slides > div {
+  margin: 0;
+}
+.mls_add_slide.btn.btn-default:before {
+  content: "\f055";
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+.ets_multilayerslider .mls_slides .btn.btn-default:hover {
+  background: none repeat scroll 0 0 #00AFF0;
+}
+.mls_slides .mls_config_button {
+  background: linear-gradient(#FFFFFF, #FAFAFA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(#FFFFFF, #FAFAFA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid #D0D0D0;
+  border-radius: 3px 3px 3px 3px;
+  float: right;
+  font-size: 12px;
+  margin: 0;
+  padding: 6px 10px;
+  position: relative;
+  z-index: 10;
+}
+.mls_layers_li img {
+  display: block;
+  margin-bottom: -5px;
+  margin-top: -5px;
+  max-height: 35px;
+  position: relative;
+  width: auto;
+}
+.slide-content .ui-widget-content {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+}
+.preview_img {
+  display: block;
+  float: left;
+  max-width: 300px;
+  position: relative;
+}
+.preview_img i {
+  cursor: pointer;
+  float: right;
+  height: auto;
+  position: relative;
+  right: 0;
+  top: 50%;
+}
+.msl_layer_front span {
+  display: block;
+  line-height: 100%;
+}
+.preview_img img {
+  max-width: 200px;
+}
+.row_backgroud_color input {
+  border: 1px solid #C7D6DB;
+  border-radius: 3px 3px 3px 3px;
+  display: block;
+  margin-left: 5px;
+  min-height: 28px;
+  min-width: 100px;
+}
+.mls_slide_list > .mls_slides_ul > .mls_slides_li {
+  float: left;
+  margin: 0 5px -1px 4px;
+}
+.mls_slide_list > .mls_slides_li:not(:last-child) .title-silde:before {
+  background-color: #ddd;
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 1px;
+}
+.mls_slides_li.open .title-silde:before {
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #FAFAFA;
+}
+.title-silde {
+  cursor: pointer;
+  float: left;
+  font-weight: bold;
+  padding: 15px;
+  position: relative;
+}
+.title-silde:before {
+  border: 1px solid #D0D0D0;
+  content: "";
+  height: 100%;
+  left: -5px;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  right: -5px;
+  top: 0;
+  z-index: 1;
+}
+.title-silde span {
+  position: relative;
+  z-index: 1;
+}
+.mls_slides_li {
+  display: inline-block;
+  list-style: none outside none;
+  padding: 0;
+}
+.slide-content {
+  background-color: #FAFAFA;
+  border: 1px solid #D0D0D0;
+  display: none;
+  left: 15px;
+  margin-left: -1px;
+  margin-top: -1px;
+  overflow: auto;
+  padding: 30px 20px;
+  position: absolute;
+  right: 20px;
+  top: 100%;
+}
+.mls_slides_li.open .slide-content{
+  display: block;
+}
+.slide-content .right-block {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  float: right;
+  padding: 15px;
+  width: 330px;
+}
+.mls_preview_slider > .mls_close {
+  border: medium none;
+  border-radius: 0 0 0 0;
+  bottom: 0;
+  height: auto;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: auto;
+  cursor: default;
+}
+.mls_preview_slider > .mls_close:before {
+  font-size: 30px;
+  padding-right: 10px;
+  padding-top: 10px;
+  text-align: right;
+}
+.mls_form_preview {
+  position: relative;
+  z-index: 10;
+}
+.mls_slides_ul .left-block {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  width: calc(100% - 350px);
+  width: -o-calc(100% - 350px);
+  width: -ms-calc(100% - 350px);
+  width: -webkit-calc(100% - 350px);
+}
+.mls_tablet_size .left-content {
+  border: 15px solid #333333;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.mls_mobile_size .left-content {
+  border: 10px solid #333333;
+  border-radius: 10px 10px 10px 10px;
+}
+.uploaded_img_wrapper .ets_mls_fancy {
+  max-width: 300px;
+}
+.mls_slides .mls_layers_li.active {
+  border-color: #2EACCE;
+  box-shadow: 0 0 1px 0 #2EACCE;
+}
+.slide-content .mls_layers_ul {
+  border-top: 1px solid #ddd;
+  clear: both;
+  display: block;
+  float: left;
+  margin-top: 10px;
+  padding-top: 15px;
+  width: 100%;
+}
+.mls_slides_ul .mls_add_layer {
+  border: medium none;
+  float: right;
+  padding: 0;
+}
+.right-block h2 {
+  float: left;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.right-block h2:before {
+  content: "\f1c5";
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+.slide-content .action {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.mls_slide_delete:before {
+  content: "\f00d";
+  font-family: FontAwesome;
+  font-size: 16px;
+  margin: 0 2px;
+  text-align: center;
+}
+.mls_slide_delete:after,
+.mls_slide_duplicated:after {
+  background-color: #DDDDDD;
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 1px;
+}
+.mls_slide_delete, .mls_slide_duplicated {
+  cursor: pointer;
+  float: left;
+  font-size: 0;
+  opacity: 0.8;
+  padding: 3px 10px;
+  position: relative;
+}
+.action > span:hover {
+  color: #00AFF0;
+}
+.mls_slide_edit {
+  cursor: pointer;
+  float: left;
+  font-size: 0;
+  opacity: 0.8;
+  padding: 3px 10px;
+}
+.mls_layer_delete {
+  cursor: pointer;
+  float: right;
+  font-size: 0;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.mls_layer_duplicate {
+  cursor: pointer;
+  float: right;
+  font-size: 0;
+  position: absolute;
+  right: 55px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.ets_multilayerslider .mls_change_mode {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+  border-radius: 0 0 0 0;
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+  padding: 6px 10px;
+  position: relative;
+  z-index: 10;
+}
+.ets_multilayerslider .mls_change_mode:not(:first-child):after {
+  background-color: #D0D0D0;
+  content: "";
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 1px;
+}
+.mls_change_mode a {
+  color: #555555;
+}
+.mls_change_mode.rtl:before {
+  content: "\f038";
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 5px;
+}
+.mls_change_mode.ltr:before {
+  content: "\f036";
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 5px;
+}
+.ets_multilayerslider .mls_change_mode.active {
+  background-color: rgba(0, 0, 0, 0);
+  border: medium none;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: none;
+  color: #00AFF0;
+}
+.ets_multilayerslider .mls_change_mode.active a {
+  color: #FFFFFF;
+}
+.mls_layer_edit {
+  cursor: pointer;
+  font-size: 0;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.mls_layer_edit:hover {
+  color: #00aff0;
+}
+.mls_slide_edit:before {
+  content: "\f044";
+  font-family: FontAwesome;
+  margin-right: 3px;
+  font-size: 16px;
+}
+.left-content {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  float: left;
+  left: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 100%;
+}
+.ui-draggable-dragging{
+  border: 1px dashed rgba(255,255,255,1)!important;
+}
+input.color {
+  background-color: #F5F8F9;
+  border: 1px solid #D0D0D0;
+  border-radius: 3px 3px 3px 3px;
+  display: block;
+  margin-left: 5px;
+  min-height: 28px;
+  min-width: 100px;
+}
+.mls_add_layer:before {
+  content: "\f055";
+  font-family: FontAwesome;
+  margin-right: 3px;
+}
+.mls_slides_li > .mls_layers_ul {
+  border: 1px solid #ddd;
+  list-style: none outside none;
+  margin: -1px 0 0 -1px;
+  opacity: 0;
+  padding: 5px;
+  position: absolute;
+  top: 100%;
+  visibility: hidden;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+.mls_slides_li.open .mls_layers_ul {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  display: block;
+}
+.mls_slide_name:after {
+  content: "\f0d7";
+  font-size: 14px;
+  font-family: FontAwesome;
+  margin-left: 4px;
+}
+.mls_slide_toggle_arrow {
+  font-size: 0;
+  display: none;
+}
+.mls_slides_li_content:hover .mls_add_layer, .mls_slides_li_content:hover .mls_slide_delete, .mls_slides_li_content:hover .mls_slide_edit {
+  opacity: 1;
+  transition: all 0.35s ease 0s;
+  -webkit-transition: all 0.35s ease 0s;
+  visibility: visible;
+}
+.mls_change_mode_dir {
+  background: linear-gradient(#FFFFFF, #FAFAFA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(#FFFFFF, #FAFAFA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid #D0D0D0;
+  border-radius: 3px 3px 3px 3px;
+  float: right;
+}
+
+
+
+/*************************/
+.mls_moving_in .mls_slider_running {
+  animation-fill-mode: both;
+  animation-name: running;
+  animation-timing-function: linear;
+}
+.mls_slider_running {
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 1s ease 0s;
+  -webkit-transition: opacity 1s ease 0s;
+  width: 100%;
+  z-index: 1000;
+}
+.mls_slider:not(.mls_moving_in) .mls_slider_running {
+  opacity: 0;
+}
+.mls_moving_in .mls_slider_running {
+  animation-fill-mode: both;
+  animation-name: running;
+  animation-timing-function: linear;
+}
+@keyframes running{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes running{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.mls_nav > div {
+  z-index: 99;
+}
+
+/**************************************************************************/
+/*-------------------------- Columns -------------------------------------*/
+/**************************************************************************/
+.layer_size_1 {
+  width: 8.33333%;
+}
+.layer_size_2 {
+  width: 16.6667%;
+}
+.layer_size_3 {
+  width: 25%;
+}
+.layer_size_4 {
+  width: 33.333%;
+}
+.layer_size_5 {
+  width: 41.6667%;
+}
+.layer_size_6 {
+  width: 50%;
+}
+.layer_size_7 {
+  width: 58.3333%;
+}
+.layer_size_8 {
+  width: 66.6667%;
+}
+.layer_size_9 {
+  width: 75%;
+}
+.layer_size_10 {
+  width: 83.3333%;
+}
+.layer_size_11 {
+  width: 91.6667%;
+}
+.layer_size_12 {
+  width: 100%;
+}
+
+
+.mls_slides .mls_layers_li {
+  background: linear-gradient(#FFFFFF, #EEEEEE) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(#FFFFFF, #EEEEEE) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: -o-linear-gradient(#FFFFFF, #EEEEEE) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: -ms-linear-gradient(#FFFFFF, #EEEEEE) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: -moz-linear-gradient(#FFFFFF, #EEEEEE) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid #D4D4D4;
+  float: left;
+  margin-bottom: 10px;
+  min-width: 100px;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+.mls_layers_li {
+  display: inline-block;
+  list-style: none outside none;
+  padding: 0;
+  position: relative;
+}
+.mls_layer_delete:hover {
+  opacity: 1;
+}
+.mls_layer_delete:before {
+  content: "\f1f8";
+  font-family: FontAwesome;
+  font-size: 14px;
+  margin: 0 2px;
+  text-align: center;
+}
+
+.mls_layer_edit:hover {
+  opacity: 1;
+}
+.mls_layer_edit:before {
+  content: "\f040";
+  font-family: FontAwesome;
+  margin-right: 3px;
+  font-size: 14px;
+}
+.mls_layer_duplicate:hover {
+  opacity: 1;
+}
+.mls_layer_duplicate:before,
+.mls_slide_duplicated:before {
+  content: "\f0c5";
+  font-family: FontAwesome;
+  margin-right: 3px;
+  font-size: 14px;
+}
+.mls_layer_duplicate{
+  font-size: 0;
+}
+.mls_slides .mls_add_block {
+  background-color: #FC5656;
+  border: 1px solid #FC5656;
+  border-radius: 0 0 0 0;
+  color: #FFFFFF;
+  float: left;
+  font-size: 12px;
+  padding: 2px 4px;
+}
+.mls_add_block:before {
+  content: "\f055";
+  font-family: FontAwesome;
+  margin-right: 3px;
+}
+
+.mls_breaker {
+  clear: both;
+}
+
+
+
+
+/**************************************************************************/
+/******************************** Block ***********************************/
+/**************************************************************************/
+
+
+
+.mls_blocks_li {
+  position: relative;
+}
+.mls_slides .mls_blocks_ul {
+  list-style: none outside none;
+  margin: 0;
+}
+.mls_block_delete {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 0;
+  opacity: 0;
+  padding: 2px 5px;
+  position: absolute;
+  right: 4px;
+  top: 0;
+  visibility: hidden;
+}
+.mls_block_delete:before {
+  content: "\f1f8";
+  font-family: FontAwesome;
+  font-size: 12px;
+  margin: 0 2px;
+  text-align: center;
+}
+.mls_block_edit {
+  background-color: #7DDB08;
+  border: 1px solid #7DDB08;
+  color: #000000;
+  cursor: pointer;
+  font-size: 0;
+  opacity: 0;
+  padding: 2px 4px;
+  position: absolute;
+  right: 29px;
+  top: 0;
+  visibility: hidden;
+}
+.mls_block_edit:before {
+  content: "\f040";
+  font-family: FontAwesome;
+  margin: 0 3px;
+  font-size: 12px;
+}
+
+.ets_mls_block > h4 {
+  margin-top: 5px;
+}
+.mls_blocks_li a {
+  line-height: 22px;
+}
+.mls_blocks_li:hover .mls_block_edit,
+.mls_blocks_li:hover .mls_block_delete{
+  opacity: 0.6;
+  visibility: visible;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.mls_blocks_li .mls_block_edit:hover,
+.mls_blocks_li .mls_block_delete:hover{
+  opacity: 1;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.mls_blocks_ul .mls_blocks_li {
+  border: 1px solid #D4D4D4;
+  padding: 5px;
+}
+.mls_blocks_ul .mls_blocks_li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.mls_slides .product_list .product-container {
+  border: 1px solid #EEEEEE;
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+}
+.ets_mls_block_content img {
+  max-width: 100%;
+}
+.mls_hide_title > h4 {
+  display: none;
+}
+.mls_block_type_product .left-block {
+  width: 50%;
+}
+.mls_block_type_product .content_price {
+  margin-bottom: 7px;
+}
+.mls_block_type_product .product_list .ajax_block_product:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/**************************************************************************/
+/********************************** Popup *********************************/
+/**************************************************************************/
+
+.mls_preview_slider.mls_pop_up,
+.mls_overlay{
+
+  background-color: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+}
+.mls_slide_form, .mls_slide_form_new,
+.mls_layer_form_new, .mls_layer_form,
+.mls_block_form_new, .mls_block_form {
+  background-color: #FFFFFF;
+  border: 1px solid #D3D8DB;
+  border-radius: 0 0 0 0;
+  float: left;
+  left: 50%;
+  margin: 3% 0;
+  max-width: 80%;
+  padding: 11px;
+  position: relative;
+  top: 0;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  width: 900px;
+  min-height: 50px;
+  transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+}
+.mls_form_preview .mls_close {
+  right: 5px;
+  top: 5px;
+  display: none;
+}
+.mls_form_preview {
+  background-color: #FFFFFF;
+  border: 1px solid #D3D8DB;
+  border-radius: 0 0 0 0;
+  float: left;
+  left: 50%;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px;
+  position: relative;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px) scale(1);
+  -webkit-transform: translate3d(-50%, -50%, 0px) scale(1);
+  width: 1170px;
+  min-height: 50px;
+  overflow: hidden;
+  transition: transform 1s ease 0s;
+  -webkit-transition: transform 1s ease 0s;
+}
+.mls_preview_slider.loading .mls_form_preview .ets_multilayerslider {
+  opacity: 0;
+  visibility: hidden;
+}
+.mls_preview_slider.loading .mls_slide_form:before,
+.mls_preview_slider.loading .mls_slide_form_new:before,
+.mls_preview_slider.loading .mls_layer_form_new:before,
+.mls_preview_slider.loading .mls_layer_form:before,
+.mls_preview_slider.loading .mls_block_form_new:before,
+.mls_preview_slider.loading .mls_block_form:before,
+.mls_preview_slider.loading .mls_config_form_content:before,
+.mls_preview_slider.loading .mls_form_preview:before{
+  display: none;
+}
+
+.loading .mls_slide_form,
+.loading .mls_slide_form_new,
+.loading .mls_layer_form_new,
+.loading .mls_layer_form,
+.loading .mls_block_form_new,
+.loading .mls_block_form,
+.loading .mls_form_preview {
+  transform: translate3d(-50%, -50%, 0px) scale(0);
+  -webkit-transform: translate3d(-50%, -50%, 0px) scale(0);
+  border-radius: 20px;
+}
+.row_repeat_x .radio, .row_repeat_y .radio {
+  display: inline-block;
+  margin-right: 20px;
+}
+.ets_mls_success_alert {
+  background-color: rgba(58, 194, 48, 0.9) !important;
+  bottom: auto !important;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  left: auto !important;
+  min-width: 200px;
+  padding: 20px 40px !important;
+  position: fixed !important;
+  right: 70px !important;
+  text-align: center;
+  top: 60px !important;
+  width: auto;
+  z-index: 10000;
+  border: medium none !important;
+}
+.ets_mls_success_alert:before{
+  display: none!important;
+}
+.mls_slide_form:before,
+.mls_slide_form_new:before,
+.mls_layer_form_new:before,
+.mls_layer_form:before,
+.mls_block_form_new:before,
+.mls_block_form:before,
+.mls_config_form_content:before,.mls_form_preview:before {
+  border: 1px solid #D3D8DB;
+  box-shadow: 0 0 0 10px #F7F7F7;
+  content: "";
+  height: calc(100% - 20px);
+  height: -o-calc(100% - 20px);
+  height: -ms-calc(100% - 20px);
+  height: -webkit-calc(100% - 20px);
+  height: -moz-calc(100% - 20px);
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: calc(100% - 20px);
+  height: -o-calc(100% - 20px);
+  height: -ms-calc(100% - 20px);
+  height: -webkit-calc(100% - 20px);
+  height: -moz-calc(100% - 20px);
+}
+.mls_close:before {
+  content: "\f00d";
+  display: block;
+  font-family: FontAwesome;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+.mls_slide_form .panel,
+.mls_config_form_content .panel {
+  border: medium none !important;
+  border-radius: 0 0 0 0 !important;
+}
+.mls_close {
+  background-color: #222222;
+  border: 1px solid #FFFFFF;
+  border-radius: 50% 50% 50% 50%;
+  box-shadow: 0 0 5px 0 #999999;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 0;
+  height: 26px;
+  line-height: 24px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 26px;
+  z-index: 1;
+}
+.mls_forms #ets_mls_block_form {
+  max-height: 600px;
+  overflow-y: auto;
+}
+.msl_screen_type {
+  background: linear-gradient(#FFFFFF, #FAFAFA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(#FFFFFF, #FAFAFA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid #D0D0D0;
+  border-radius: 3px 3px 3px 3px;
+  display: flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  float: right;
+  white-space: nowrap;
+}
+.mls_players {
+  background: linear-gradient(#FFFFFF, #FAFAFA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(#FFFFFF, #FAFAFA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-radius: 3px 3px 3px 3px;
+  display: flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  float: right;
+  white-space: nowrap;
+}
+.msl_screen_type > div, .mls_players > div {
+  cursor: pointer;
+  line-height: 28px!important;
+  padding: 0 12px!important;
+  position: relative;
+}
+.msl_screen_type div.active {
+  color: #00AFF0;
+}
+.msl_screen_type > div:first-child:before {
+  content: "\f108";
+  font-family: FontAwesome;
+  margin-right: 4px;
+  font-size: 16px;
+  vertical-align: -2px;
+}
+.msl_screen_type > div:last-child:before {
+  content: "\f10b";
+  font-family: FontAwesome;
+  font-size: 20px;
+  margin-right: 4px;
+  vertical-align: -3px;
+}
+.msl_screen_type > div:nth-child(2):before {
+  content: "\f10a";
+  font-family: FontAwesome;
+  font-size: 20px;
+  margin-right: 4px;
+  vertical-align: -3px;
+}
+.msl_screen_type > div:not(:last-child):after,
+.mls_players > div:not(:last-child):after {
+  background-color: #D0D0D0;
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 1px;
+}
+.mls_config_form.mls_pop_up {
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 10%;
+  float: left;
+  height: auto;
+  left: 50%;
+  max-width: 80%;
+  padding: 15px;
+  position: relative;
+  top: 10%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 750px;
+}
+.mls_config_form_content{
+  float: left;
+  width: 100%;
+}
+.mls_play_slider:before {
+  content: "\f01d";
+  font-family: FontAwesome;
+  font-size: 16px;
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+.mls_forms .mls_form {
+  float: left;
+  margin-left: -10px;
+  max-height: 93%;
+  overflow: auto;
+  padding: 10px;
+  width: calc(100% + 20px);
+  width: -o-calc(100% + 20px);
+  width: -ms-calc(100% + 20px);
+  width: -moz-calc(100% + 20px);
+  width: -webkit-calc(100% + 20px);
+}
+.mls_config_form > .mls_close {
+  cursor: default;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.mls_forms .alert {
+  clear: left;
+}
+#ets_mls_layer_form .form-wrapper {
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.mls_layer_form_tab {
+  margin: 0;
+  padding: 0;
+}
+.mls_layer_form_tab li {
+  border-bottom: 1px solid #D0D0D0;
+  display: block;
+  list-style: none outside none;
+  padding: 12px 15px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #fcfcfc;
+}
+
+.mls_layer_form_tab li.active,
+.mls_layer_form_tab li:hover {
+  background-color: #EEEEEE;
+}
+.mls_layer_edit_form {
+  border: 1px solid #DBDBDB;
+  margin-left: -1px;
+  padding: 15px;
+  width: 77%;
+}
+.mls_layer_form_tab_div {
+  border: 1px solid #D0D0D0;
+  margin-right: 0%;
+  min-width: 150px;
+  width: 23%;
+}
+.layer_content_form .radio {
+  display: inline-block;
+  min-width: 110px;
+}
+/**/
+.ui-widget-content.draggable.ui-draggable.ui-draggable-handle {
+  height: auto !important;
+  width: auto !important;
+}
+.slide-content .action {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: auto;
+  z-index: 10;
+}
+.ets_multilayerslider.loading:after {
+  background-color: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: -17px;
+  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  z-index: 3000;
+}
+.ets_multilayerslider.loading:before {
+  transform: translate3d(-50%, -50%, 0px) scale(1);
+  -webkit-transform: translate3d(-50%, -50%, 0px) scale(1);
+  -moz-transform: translate3d(-50%, -50%, 0px) scale(1);
+  -o-transform: translate3d(-50%, -50%, 0px) scale(1);
+  -ms-transform: translate3d(-50%, -50%, 0px) scale(1);
+  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  opacity: 1;
+}
+.ets_multilayerslider:before {
+  background-color: #FFFFFF;
+  background-image: url("../img/ajax-loader.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 5px 5px;
+  content: "";
+  display: block;
+  font-size: 20px;
+  height: 50px;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px) scale(0.2);
+  -webkit-transform: translate3d(-50%, -50%, 0px) scale(0.2);
+  -moz-transform: translate3d(-50%, -50%, 0px) scale(0.2);
+  -o-transform: translate3d(-50%, -50%, 0px) scale(0.2);
+  -ms-transform: translate3d(-50%, -50%, 0px) scale(0.2);
+  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  width: 70px;
+  z-index: 4000;
+  opacity: 0;
+}
+.ets_multilayerslider.loading .mls_slides {
+  opacity: 0.6;
+}
+.mls_layers_button {
+  border: 1px solid;
+  display: inline-block;
+  line-height: 100%;
+  padding: 10px 20px;
+}
+.mls_slide_list {
+  float: left;
+  margin: 0!important;
+}
+.mls_save_wrapper > .mls_saving {
+  border: 1px solid #DEDEDE;
+  border-radius: 3px 3px 3px 3px;
+  display: none;
+  float: right;
+  font-size: 10px;
+  line-height: 16px;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+.mls_saving > img {
+  margin-bottom: 2px;
+  margin-top: 4px;
+}
+.mls_saving span {
+  clear: left;
+  display: block;
+}
+.mls_save_wrapper > .mls_save{
+  display: block;
+}
+.mls_save_wrapper.mls_saving_enabled > .mls_saving
+{
+  display: block;
+}
+.mls_save_wrapper.mls_saving_enabled > .mls_save{
+  display: none;
+}
+.mls_preview_slider .mls_preview_loading {
+  background-color: #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  left: 50%;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+
+}
+.mls_preview_slider .mls_preview_loading, .mls_preview_slider.loading .mls_close {
+  display: none;
+  z-index: 11;
+}
+.mls_preview_slider .mls_form_preview{
+  display: block;
+}
+.mls_preview_slider.loading .mls_preview_loading,.mls_preview_slider .mls_close{
+  display: block;
+}
+.ets_multilayerslider_wrapper {
+  margin-bottom: 250px;
+}
+.mls_form_preview .mls_slides {
+  padding: 0;
+}
+.mls_mobile_size .mls_nav > div,
+.mls_tablet_size .mls_nav > div {
+  transform: scale(3);
+  -webkit-transform: scale(3);
+  transform-origin: 0 50% 0;
+  -webkit-transform-origin: 0 50% 0;
+}
+.mls_mobile_size .mls_nav > div.mls_next,
+.mls_tablet_size .mls_nav > div.mls_next {
+  transform-origin: 100% 50% 0;
+  -webkit-transform-origin: 100% 50% 0;
+}
+.mls_mobile_size .mls_pagination,
+.mls_tablet_size .mls_pagination {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform-origin: 0 100% 0;
+  -webkit-transform-origin: 0 100% 0;
+}
+
+.mls_desktop_size .mls_nav > div {
+  transform-origin: 0 50% 0;
+  -webkit-transform-origin: 0 50% 0;
+}
+.mls_desktop_size .mls_nav > div.mls_next {
+  transform-origin: 100% 50% 0;
+  -webkit-transform-origin: 100% 50% 0;
+}
+.mls_pag_button:not(.active) {
+  background-color: #FFFFFF !important;
+}
+.msl_layer iframe{
+  padding: 10px;
+}
+.mls_export_form {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  float: left;
+  left: 0;
+  margin: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+}
+.mls_export_option, .mls_import_option {
+  display: block;
+  float: left;
+  padding: 0 30px;
+  position: relative;
+  width: 50%;
+}
+.mls_export_form_content .panel-heading {
+  display: block;
+  font-weight: bold;
+  height: auto !important;
+  margin: 0 0 15px !important;
+  padding: 5px 0 !important;
+  width: 100%;
+}
+.mls_import_option:before {
+  background-color: #EEEEEE;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 1px;
+}
+.mls_export.mls_pop_up {
+  background-color: #FFFFFF;
+  float: left;
+  height: auto;
+  left: 50%;
+  padding: 15px 0;
+  position: relative;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  width: 800px;
+  max-width: 90%;
+  z-index: 10;
+}
+.mls_export_option_note {
+  color: #999999;
+  display: block;
+  padding-top: 10px;
+}
+.mls_import_slider_loading {
+  background-image: none;
+  border-radius: 3px 3px 3px 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.42857;
+  margin-bottom: 0;
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  color: #363A41;
+}
+.mls_import_slider_loading > img {
+  margin-right: 5px;
+}
+.mls_export_form_content {
+  padding: 0 15px;
+}
+.mls_export.mls_pop_up:before {
+  border: 1px solid #D3D8DB;
+  bottom: 10px;
+  box-shadow: 0 0 0 15px #F7F7F7;
+  content: "";
+  left: 10px;
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+  top: 10px;
+}
+.mls_import_option_form > div {
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  margin-bottom: 15px;
+}
+.mls_export_button {
+  float: right;
+}
+.mls_import_option_updata > label {
+  margin-right: 15px;
+}
+.mls_import_option_clean > label {
+  margin-left: 5px;
+}
+.mls_export_form > .mls_close {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.mls_slide_list .alert-warning.msl_no_slides {
+  margin-top: 15px;
+  position: absolute !important;
+  top: 100%;
+  width: calc(100% - 30px);
+  width: -webkit-calc(100% - 30px);
+}
+.mls_add_slide {
+  margin-bottom: 10px !important;
+}
+
+
+
+a:focus, a:active ,button:focus , button:active,
+input:focus, input:active{
+  outline: none!important;
+  -wevkit-outline: none!important;
+}
+.ets_multilayerslider .mls_slides > div.mls_config_button {
+  margin-right: 0;
+}
+.ets-dir-rtl-wrapper .msl_layer_wrapper {
+  transform-origin: 100% 0 0;
+}
+.ets-dir-rtl-wrapper .mls_layer_duplicate {
+  left: 55px;
+  right: auto;
+}
+.ets-dir-rtl-wrapper .mls_layer_edit {
+  left: 30px;
+  right: auto;
+}
+.ets-dir-rtl-wrapper .mls_layer_delete {
+  left: 5px;
+  right: auto;
+}
+.ets-dir-rtl-wrapper .mls_save_wrapper > .mls_saving {
+  float: left;
+}
+.ets-dir-rtl-wrapper .left-block {
+  float: right;
+}
+.ets-dir-rtl-wrapper .right-block {
+  float: left;
+}
+.ets-dir-rtl-wrapper .slide-content .action {
+  left: 10px;
+  right: auto;
+}
+.ets-dir-rtl-wrapper .right-block h2 {
+  float: right;
+}
+.ets-dir-rtl-wrapper .mls_slides_ul .mls_add_layer,
+.ets-dir-rtl-wrapper .mls_export_button {
+  float: left;
+}
+.ets-dir-rtl-wrapper .mls_slides .mls_config_button,
+.ets-dir-rtl-wrapper .ets_multilayerslider .mls_slides > div,
+.ets-dir-rtl-wrapper .mls_players{
+  float: left;
+}
+.ets-dir-rtl-wrapper .ets_multilayerslider .mls_slides > div.mls_slide_list,
+.ets-dir-rtl-wrapper .ets_multilayerslider .mls_slides div.mls_add_slide,
+.ets-dir-rtl-wrapper .mls_slide_list > .mls_slides_ul > .mls_slides_li {
+  float: right;
+}
+.ets-dir-rtl-wrapper .msl_screen_type > div:not(:last-child):after,
+.ets-dir-rtl-wrapper .mls_players > div:not(:last-child):after {
+  right: auto;
+  left: 0;
+}
+.ets-dir-rtl-wrapper .ets_multilayerslider .mls_slides > div.mls_config_button {
+  margin-right: 5px;
+  margin-left: 0;
+}
+.ets-dir-rtl-wrapper .mls_add_slide.btn.btn-default:before,
+.ets-dir-rtl-wrapper .mls_play_slider:before,
+.ets-dir-rtl-wrapper .msl_screen_type > div:first-child:before,
+.ets-dir-rtl-wrapper .msl_screen_type > div:nth-child(2):before,
+.ets-dir-rtl-wrapper .msl_screen_type > div:last-child:before,
+.ets-dir-rtl-wrapper .mls_change_mode.ltr:before,
+.ets-dir-rtl-wrapper .mls_change_mode.rtl:before,
+.ets-dir-rtl-wrapper .mls_slide_delete:before,
+.ets-dir-rtl-wrapper .mls_layer_duplicate:before,
+.ets-dir-rtl-wrapper .mls_slide_duplicated:before,
+.ets-dir-rtl-wrapper .mls_slide_edit:before,
+.ets-dir-rtl-wrapper .right-block h2:before,
+.ets-dir-rtl-wrapper .mls_add_layer:before,
+.ets-dir-rtl-wrapper .mls_layer_delete:before,
+.ets-dir-rtl-wrapper .mls_layer_edit:before,
+.ets-dir-rtl-wrapper .mls_config_button:before {
+  float: right;
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+@media (max-width: 1199px){
+  .msl_screen_type > div {
+    font-size: 0;
+    height: 29px;
+  }
+  .mls_add_slide.btn.btn-default:before {
+    font-size: 18px;
+    line-height: 28px;
+    margin-right: 0;
+  }
+  .mls_slides .mls_add_slide {
+    font-size: 0;
+    height: 29px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .mls_config_button:before {
+    font-size: 12px;
+    margin-right: 0;
+  }
+  .mls_slides .mls_config_button{
+    font-size: 0;
+  }
+  .mls_export_option, .mls_import_option {
+    margin: 10px 0;
+    padding: 0 30px;
+    width: 100%;
+  }
+  .mls_import_option:before{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+.translatable-field {
+    max-width: 1170px;
+}
+.form-group .input-group {
+    width: 200px;
+    max-width: 100%;
+}
+.form-group .form-group .row {
+    margin-left: 0!important;
+}
+input[type="radio"] {
+    cursor: pointer;
+}
+.ets_cb_position input#left_bottom {
+    background-image: url(../img/pl.png);
+}
+.ets_cb_position input#right_bottom {
+    background-image: url(../img/pr.png);
+}
+.ets_cb_position input#bottom {
+    background-image: url(../img/pf.png);
+}
+.form-wrapper > .form-group > label.control-label.col-lg-4,
+.form-wrapper > .form-group > label.control-label.col-lg-3 {
+    width: 25%;
+}
+.form-wrapper > .form-group > label.control-label.col-lg-4 + .col-lg-9 {
+    width: 75%;
+}
+body .bootstrap .form-horizontal .form-wrapper {
+    max-width: 100%;
+}
+.ets_cb_position input[type="radio"] {
+    width: 60px;
+    height: 35px;
+    appearance: none;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 15px;
+    outline: none!important;
+    margin-left: 10px!important;
+    position: relative;
+}
+.ets_cb_position label {
+    vertical-align: middle;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    float: left;
+    clear: both;
+}
+.bootstrap .form-group .form-group {
+    margin-bottom: 0;
+}
+button.btn.btn-default.ets-cb-reset-color {
+    margin-left: 50px;
+}
+.ets_cb_agree_button .translatable-field,
+.ets_cb_agree_button input{
+    max-width: 210px;
+}
+.radio.ets_cb_position {
+    padding-top: 0!important;
+    padding-bottom: 5px;
+    display: flex;
+    display: -webkit-flex;
+}
+button.btn {
+    outline: none!important;
+    box-shadow: none!important;
+}
+iframe {
+    min-height: 100px;
+}
+.ets_cb_position input[type="radio"]:before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 100%;
+    margin-right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 1px #ccc;
+}
+.ets_cb_position input[type="radio"]:checked:before {
+    background: #2eacce;
+    box-shadow: 0 0 0 1px #2eacce;
+}
+
+
+
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ph_viewedproducts</name>
+    <displayName><![CDATA[Viewed products]]></displayName>
+    <version><![CDATA[1.1.2]]></version>
+    <description><![CDATA[Display a list of viewed products on various positions: Homepge, product pages, left sidebar, right sidebar. Product list is saved for logged-in customers.]]></description>
+    <author><![CDATA[ETS-Soft]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

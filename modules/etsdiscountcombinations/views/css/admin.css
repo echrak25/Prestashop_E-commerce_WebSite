@@ -1,0 +1,64 @@
+.dc_search_rule_form .input-group {
+    width: 450px;
+}
+.dc_search_rule_form input {
+    max-width: 450px;
+}
+.dc_rules li {
+  list-style-type: none;
+}
+.dc_results ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+.dc_results {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    border-radius: 2px;
+}
+.dc_results ul li span {
+    padding: 12px 15px;
+    display: block;
+    cursor: pointer;
+}
+ul.dc_rules {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    max-width: 450px;
+}
+ul.dc_rules li.dc_rule_item {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    margin: 2px 0;
+    position: relative;
+    border-radius: 3px;
+}
+ul.dc_rules li.dc_rule_item .dc_block_item_close {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 34px;
+}
+.dc_results ul li span img {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.ets_svg_fill_lightgray svg{
+    width: 14px;
+    height: 14px;
+    margin-top: 5px;
+}
+#cart_rule_combinations .setting-default, span.setting-default {
+    color: #999;
+}

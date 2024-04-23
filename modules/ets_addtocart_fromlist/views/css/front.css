@@ -1,0 +1,105 @@
+.add-to-cart-icon svg {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+}
+
+#products .product-description, .featured-products .product-description, .product-accessories .product-description, .product-miniature .product-description {
+    overflow: visible;
+}
+.atc_div.add-to-cart-button {
+    margin-top: 5px;
+}
+button#ets_addToCart {
+    outline: none;
+}
+.add-to-cart-icon #ets_addToCart {
+    box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 20%);
+    color: #333333;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+.add-to-cart-button button.loading:before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid transparent!important;
+    border-right: 1px solid transparent!important;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    top: 50%;
+    animation: loading 0.5s infinite linear;
+    -webkit-animation: loading 0.5s infinite linear;
+}
+
+.add-to-cart-button button.loading {
+    color: transparent!important;
+    fill: transparent!important;
+}
+
+#products .ets_cart_type_button .thumbnail-container,
+.featured-products .ets_cart_type_button .thumbnail-container,
+.product-accessories .ets_cart_type_button .thumbnail-container,
+.product-miniature.ets_cart_type_button .thumbnail-container {
+    position: relative;
+    height: auto;
+}
+#products .ets_cart_type_button .product-description,
+.featured-products .ets_cart_type_button .product-description,
+.product-accessories .ets_cart_type_button .product-description,
+.product-miniature.ets_cart_type_button .product-description {
+    position: relative;
+    height: auto;
+}
+#products .ets_cart_type_button .highlighted-informations,
+.featured-products .ets_cart_type_button .highlighted-informations,
+.product-accessories .ets_cart_type_button .highlighted-informations,
+.product-miniature.ets_cart_type_button .highlighted-informations {
+    bottom: 2.5rem;
+    opacity: 0;
+}
+#products .ets_cart_type_button .thumbnail-container:focus .highlighted-informations.no-variants,
+#products .ets_cart_type_button .thumbnail-container:hover .highlighted-informations.no-variants,
+.featured-products .ets_cart_type_button .thumbnail-container:focus .highlighted-informations.no-variants,
+.featured-products .ets_cart_type_button .thumbnail-container:hover .highlighted-informations.no-variants,
+.product-accessories .ets_cart_type_button .thumbnail-container:focus .highlighted-informations.no-variants,
+.product-accessories .ets_cart_type_button .thumbnail-container:hover .highlighted-informations.no-variants,
+.product-miniature.ets_cart_type_button .thumbnail-container:focus .highlighted-informations.no-variants,
+.product-miniature.ets_cart_type_button .thumbnail-container:hover .highlighted-informations.no-variants {
+    bottom: 6rem;
+    opacity: 1;
+}
+#products .ets_cart_type_button .thumbnail-container:focus .highlighted-informations,
+#products .ets_cart_type_button .thumbnail-container:hover .highlighted-informations,
+.featured-products .ets_cart_type_button .thumbnail-container:focus .highlighted-informations,
+.featured-products .ets_cart_type_button .thumbnail-container:hover .highlighted-informations,
+.product-accessories .ets_cart_type_button .thumbnail-container:focus .highlighted-informations,
+.product-accessories .ets_cart_type_button .thumbnail-container:hover .highlighted-informations,
+.product-miniature.ets_cart_type_button .thumbnail-container:focus .highlighted-informations,
+.product-miniature.ets_cart_type_button .thumbnail-container:hover .highlighted-informations {
+    bottom: 8rem;
+    opacity: 1;
+}

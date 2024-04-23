@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+	<YBC_NEWSLETTER_POPUP_CONTENT><![CDATA[<p>Welcome to SHOP NOW<br/>Subscribe to our newsletter to stay on top with latest news, special offers and many more</p>]]></YBC_NEWSLETTER_POPUP_CONTENT>
+    <YBC_NEWSLETTER_POPUP_THANK_YOU><![CDATA[<h3>Thank you</h3>
+<p>You have successfully subscribed to our mailing list. We have also sent a voucher code to your email as a gift.</p>
+<p>You will get <span>20%</span> off on your first order if you apply this voucher to the order</p>]]></YBC_NEWSLETTER_POPUP_THANK_YOU>
+    <YBC_VERIFICATION_EMAIL><![CDATA[Thank you for subscribing to our newsletter, please confirm your request by clicking the link below:<br/>[verification_url]]]></YBC_VERIFICATION_EMAIL>
+    <YBC_CONFIRMATION_EMAIL><![CDATA[Thank you for subscribing to our newsletter. We are pleased to offer you the following voucher: <span style="color:#333"><strong>#VOUCHER</strong>. <br/>If you are not interested in our newsletters, you can unsubscribe by clicking on the link below any time: <br/>[unsubscribe_url]]]></YBC_CONFIRMATION_EMAIL>    
+</data>

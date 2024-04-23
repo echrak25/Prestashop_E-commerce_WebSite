@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_checkpayment</name>
+    <displayName><![CDATA[Ch&egrave;que]]></displayName>
+    <version><![CDATA[2.0.6]]></version>
+    <description><![CDATA[Affichez vos coordonn&eacute;es pour faciliter le paiement par ch&egrave;que sur votre boutique en ligne.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Êtes-vous sûr de vouloir supprimer vos paramètres ?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

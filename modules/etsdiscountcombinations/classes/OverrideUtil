@@ -1,0 +1,368 @@
+<?php
+/**
+ * Copyright ETS Software Technology Co., Ltd
+ *
+ * NOTICE OF LICENSE
+ *
+ * This file is not open source! Each license that you purchased is only available for 1 website only.
+ * If you want to use this file on more websites (or projects), you need to purchase additional licenses.
+ * You are not allowed to redistribute, resell, lease, license, sub-license or offer our resources to any third party.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future.
+ *
+ * @author ETS Software Technology Co., Ltd
+ * @copyright  ETS Software Technology Co., Ltd
+ * @license    Valid for 1 website (or project) for each purchase of license
+ */
+class Ets_dccr_overrideUtil
+{
+    /**
+     * @var array[]
+     */
+    static public $conflict = [
+        [
+            'class' => 'AdminCartRulesController',
+            'file' => 'controllers/admin/AdminCartRulesController.php',
+            'method' => 'postProcess',
+            'conflicts' => ['ets_promotion','etsdiscountcombinations'],
+            'priority' => [
+                0 => 'ets_promotion',
+                1 => 'etsdiscountcombinations',
+            ]
+        ],
+        [
+            'class' => 'CartRule',
+            'file' => 'classes/CartRule.php',
+            'method' => 'checkValidity',
+            'conflicts' => ['ets_reviews','etsdiscountcombinations'],
+            'priority' => [
+                0 => 'ets_reviews',
+                1 => 'etsdiscountcombinations',
+            ]
+        ]
+    ];
+    /**
+     * Run AFTER enable
+     * @param Module $currentModule
+     * @throws Exception
+     */
+    public static function onModuleEnabled(Module $currentModule)
+    {
+        $curModuleName = $currentModule->name;
+        foreach (self::$conflict as $item) {
+            if(in_array($curModuleName, $item['conflicts'])){
+                $matchedByPriority = null;
+                foreach ($item['priority'] as $i => $name) {
+                    if(self::isEnabled($name) || $name==$curModuleName){
+                        $matchedByPriority = $name;
+                        break;
+                    }
+                }
+                if($matchedByPriority !== null){
+                    if($matchedByPriority !== $curModuleName){
+                        self::removeOverrideMethod($currentModule, $item['class'], $item['method']);
+                        $instance = Module::getInstanceByName($matchedByPriority);
+                        $instance && self::addOverrideMethod($instance, $item['class'], $item['method']);
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Run BEFORE enable module
+     * @param \Module $currentModule
+     * @throws \ReflectionException
+     */
+    public static function resolveConflict(Module $currentModule)
+    {
+        $curModuleName = $currentModule->name;
+        foreach (self::$conflict as $item) {
+            if(in_array($curModuleName, $item['conflicts'])){
+                foreach ($item['conflicts'] as $name) {
+                    $instance = Module::getInstanceByName($name);
+                    self::isEnabled($name) && $instance && self::removeOverrideMethod($instance, $item['class'], $item['method']);
+                }
+            }
+        }
+    }
+
+    /**
+     * Run after disable module
+     * @param \Module $moddule
+     * @throws \ReflectionException
+     */
+    public static function restoreReplacedMethod(\Module $moddule)
+    {
+        $curModuleName = $moddule->name;
+        foreach (self::$conflict as $item) {
+            if(in_array($curModuleName, $item['conflicts']) && ($currentPriority = array_search($curModuleName, $item['priority'], true)) !== false){
+                foreach ($item['priority'] as $i => $name) {
+
+                    if(self::isEnabled($name) && $name!=$curModuleName){
+                        if ($i > $currentPriority) {
+                            $instance = Module::getInstanceByName($name);
+                            $instance && self::addOverrideMethod($instance, $item['class'], $item['method']);
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    /**
+     * @param Module $module
+     * @param $classname
+     * @param $method_name
+     */
+    public static function addOverrideMethod($module,$classname,$method_name)
+    {
+        PrestaShopAutoload::getInstance()->generateIndex();
+        $orig_path = $path = PrestaShopAutoload::getInstance()->getClassPath($classname . 'Core');
+        if (!$path) {
+            $path = 'modules' . DIRECTORY_SEPARATOR . $classname . DIRECTORY_SEPARATOR . $classname . '.php';
+        }
+        $path_override = $module->getLocalPath() . 'override' . DIRECTORY_SEPARATOR . $path;
+
+        if (!file_exists($path_override)) {
+            return false;
+        } else {
+            file_put_contents($path_override, preg_replace('#(\r\n|\r)#ism', "\n", file_get_contents($path_override)));
+        }
+
+        $pattern_escape_com = '#(^\s*?\/\/.*?\n|\/\*(?!\n\s+\* module:.*?\* date:.*?\* version:.*?\*\/).*?\*\/)#ism';
+        // Check if there is already an override file, if not, we just need to copy the file
+        if ($file = PrestaShopAutoload::getInstance()->getClassPath($classname)) {
+            // Check if override file is writable
+            $override_path = _PS_ROOT_DIR_ . '/' . $file;
+
+            if ((!file_exists($override_path) && !is_writable(dirname($override_path))) || (file_exists($override_path) && !is_writable($override_path))) {
+                throw new Exception(Context::getContext()->getTranslator()->trans('file (%s) not writable', [$override_path], 'Admin.Notifications.Error'));
+            }
+
+            // Get a uniq id for the class, because you can override a class (or remove the override) twice in the same session and we need to avoid redeclaration
+            do {
+                $uniq = uniqid();
+            } while (class_exists($classname . 'OverrideOriginal_remove', false));
+
+            // Make a reflection of the override class and the module override class
+            $override_file = file($override_path);
+            $override_file = array_diff($override_file, ["\n"]);
+            eval(
+            preg_replace(
+                ['#^\s*<\?(?:php)?#', '#class\s+' . $classname . '\s+extends\s+([a-z0-9_]+)(\s+implements\s+([a-z0-9_]+))?#i'],
+                [' ', 'class ' . $classname . 'OverrideOriginal' . $uniq . ' extends \stdClass'],
+                implode('', $override_file)
+            )
+            );
+            $override_class = new ReflectionClass($classname . 'OverrideOriginal' . $uniq);
+
+            $module_file = file($path_override);
+            $module_file = array_diff($module_file, ["\n"]);
+            eval(
+            preg_replace(
+                ['#^\s*<\?(?:php)?#', '#class\s+' . $classname . '(\s+extends\s+([a-z0-9_]+)(\s+implements\s+([a-z0-9_]+))?)?#i'],
+                [' ', 'class ' . $classname . 'Override' . $uniq . ' extends \stdClass'],
+                implode('', $module_file)
+            )
+            );
+            $module_class = new ReflectionClass($classname . 'Override' . $uniq);
+
+            $matchedMethod = null;
+            // Check if none of the methods already exists in the override class
+            foreach ($module_class->getMethods() as $method) {
+                if($method->getName() != $method_name)
+                    continue;
+
+                if ($override_class->hasMethod($method->getName()) ) {
+                    return true;
+                }
+                $module_file = preg_replace('/((:?public|private|protected)\s+(static\s+)?function\s+(?:\b' . $method->getName() . '\b))/ism', "/*\n    * module: " . $module->name . "\n    * date: " . date('Y-m-d H:i:s') . "\n    * version: " . $module->version . "\n    */\n    $1", $module_file);
+                $matchedMethod = $method;
+            }
+            // Insert the methods from module override in override
+            $copy_from = array_slice($module_file, $matchedMethod->getStartLine() - 1, $matchedMethod->getEndLine() - $matchedMethod->getStartLine() + 1);
+
+
+            array_splice($override_file, $override_class->getEndLine() - 1, 0, $copy_from);
+
+            $code = implode('', $override_file);
+            file_put_contents($override_path, preg_replace($pattern_escape_com, '', $code));
+        } else {
+            $override_src = $path_override;
+
+            $override_dest = _PS_ROOT_DIR_ . DIRECTORY_SEPARATOR . 'override' . DIRECTORY_SEPARATOR . $path;
+            $dir_name = dirname($override_dest);
+
+            if (!$orig_path && !is_dir($dir_name)) {
+                @mkdir($dir_name, FileSystem::DEFAULT_MODE_FOLDER);
+            }
+
+            if (!is_writable($dir_name)) {
+                throw new Exception(Context::getContext()->getTranslator()->trans('directory (%s) not writable', [$dir_name], 'Admin.Notifications.Error'));
+            }
+            $module_file = file($override_src);
+            $module_file = array_diff($module_file, ["\n"]);
+            if ($orig_path) {
+                do {
+                    $uniq = uniqid();
+                } while (class_exists($classname . 'OverrideOriginal_remove', false));
+                eval(
+                preg_replace(
+                    ['#^\s*<\?(?:php)?#', '#class\s+' . $classname . '(\s+extends\s+([a-z0-9_]+)(\s+implements\s+([a-z0-9_]+))?)?#i'],
+                    [' ', 'class ' . $classname . 'Override' . $uniq . ' extends \stdClass'],
+                    implode('', $module_file)
+                )
+                );
+                $module_class = new ReflectionClass($classname . 'Override' . $uniq);
+
+                // For each method found in the override, prepend a comment with the module name and version
+                foreach ($module_class->getMethods() as $method) {
+                    if($method->getName()== $method_name)
+                    {
+                        $module_file = preg_replace('/((:?public|private|protected)\s+(static\s+)?function\s+(?:\b' . $method->getName() . '\b))/ism', "/*\n    * module: " . $module->name . "\n    * date: " . date('Y-m-d H:i:s') . "\n    * version: " . $module->version . "\n    */\n    $1", $module_file);
+                        if ($module_file === null) {
+                            throw new Exception(Context::getContext()->getTranslator()->trans('Failed to override method %1$s in class %2$s.', [$method->getName(), $classname], 'Admin.Modules.Notification'));
+                        }
+                    }
+
+                }
+            }
+            file_put_contents($override_dest, preg_replace($pattern_escape_com, '', $module_file));
+        }
+        PrestashopAutoload::getInstance()->generateIndex();
+    }
+
+    /**
+     * @param Module $module
+     * @param $classname
+     * @param $method_name
+     */
+    public static function removeOverrideMethod($module,$classname,$method_name)
+    {
+        PrestaShopAutoload::getInstance()->generateIndex();
+        $orig_path = $path = PrestaShopAutoload::getInstance()->getClassPath($classname . 'Core');
+
+        if ($orig_path && !$file = PrestaShopAutoload::getInstance()->getClassPath($classname)) {
+            return true;
+        } elseif (!$orig_path && Module::getModuleIdByName($classname)) {
+            $path = 'modules' . DIRECTORY_SEPARATOR . $classname . DIRECTORY_SEPARATOR . $classname . '.php';
+        }
+
+        // Check if override file is writable
+        if ($orig_path) {
+            $override_path = _PS_ROOT_DIR_ . '/' . $file;
+        } else {
+            $override_path = _PS_OVERRIDE_DIR_ . $path;
+        }
+
+        if (!is_file($override_path)) {
+            return true;
+        }
+
+        if (!is_writable($override_path)) {
+            return false;
+        }
+
+        file_put_contents($override_path, preg_replace('#(\r\n|\r)#ism', "\n", file_get_contents($override_path)));
+
+        if ($orig_path) {
+            // Get a uniq id for the class, because you can override a class (or remove the override) twice in the same session and we need to avoid redeclaration
+            do {
+                $uniq = uniqid();
+            } while (class_exists($classname . 'OverrideOriginal_remove', false));
+
+            // Make a reflection of the override class and the module override class
+            $override_file = file($override_path);
+
+            eval(
+            preg_replace(
+                ['#^\s*<\?(?:php)?#', '#class\s+' . $classname . '\s+extends\s+([a-z0-9_]+)(\s+implements\s+([a-z0-9_]+))?#i'],
+                [' ', 'class ' . $classname . 'OverrideOriginal_remove' . $uniq . ' extends \stdClass'],
+                implode('', $override_file)
+            )
+            );
+            $override_class = new ReflectionClass($classname . 'OverrideOriginal_remove' . $uniq);
+
+            $module_file = file($module->getLocalPath() . 'override/' . $path);
+            eval(
+            preg_replace(
+                ['#^\s*<\?(?:php)?#', '#class\s+' . $classname . '(\s+extends\s+([a-z0-9_]+)(\s+implements\s+([a-z0-9_]+))?)?#i'],
+                [' ', 'class ' . $classname . 'Override_remove' . $uniq . ' extends \stdClass'],
+                implode('', $module_file)
+            )
+            );
+            $module_class = new ReflectionClass($classname . 'Override_remove' . $uniq);
+
+            // Remove methods from override file
+            foreach ($module_class->getMethods() as $method) {
+                if (!$override_class->hasMethod($method->getName()) || $method->getName()!=$method_name) {
+                    continue;
+                }
+                $method = $override_class->getMethod($method->getName());
+                $length = $method->getEndLine() - $method->getStartLine() + 1;
+
+                $module_method = $module_class->getMethod($method->getName());
+                $override_file_orig = $override_file;
+
+                $orig_content = preg_replace('/\s/', '', implode('', array_splice($override_file, $method->getStartLine() - 1, $length, array_pad([], $length, '#--remove--#'))));
+                $module_content = preg_replace('/\s/', '', implode('', array_splice($module_file, $module_method->getStartLine() - 1, $length, array_pad([], $length, '#--remove--#'))));
+
+                $replace = true;
+                if (preg_match('/\* module: (' . $module->name . ')/ism', $override_file[$method->getStartLine() - 5])) {
+                    $override_file[$method->getStartLine() - 6] = $override_file[$method->getStartLine() - 5] = $override_file[$method->getStartLine() - 4] = $override_file[$method->getStartLine() - 3] = $override_file[$method->getStartLine() - 2] = '#--remove--#';
+                    $replace = false;
+                }
+
+                if (md5($module_content) != md5($orig_content) && $replace) {
+                    $override_file = $override_file_orig;
+                }
+            }
+            $count = count($override_file);
+            for ($i = 0; $i < $count; ++$i) {
+                if (preg_match('/(^\s*\/\/.*)/i', $override_file[$i])) {
+                    $override_file[$i] = '#--remove--#';
+                } elseif (preg_match('/(^\s*\/\*)/i', $override_file[$i])) {
+                    if (!preg_match('/(^\s*\* module:)/i', $override_file[$i + 1])
+                        && !preg_match('/(^\s*\* date:)/i', $override_file[$i + 2])
+                        && !preg_match('/(^\s*\* version:)/i', $override_file[$i + 3])
+                        && !preg_match('/(^\s*\*\/)/i', $override_file[$i + 4])) {
+                        for (; $override_file[$i] && !preg_match('/(.*?\*\/)/i', $override_file[$i]); ++$i) {
+                            $override_file[$i] = '#--remove--#';
+                        }
+                        $override_file[$i] = '#--remove--#';
+                    }
+                }
+            }
+            // Rewrite nice code
+            $code = '';
+            foreach ($override_file as $line) {
+                if ($line == '#--remove--#') {
+                    continue;
+                }
+
+                $code .= $line;
+            }
+            $to_delete = preg_match('/<\?(?:php)?\s+(?:abstract|interface)?\s*?class\s+' . $classname . '\s+extends\s+' . $classname . 'Core\s*?[{]\s*?[}]/ism', $code);
+        }
+
+        if (!isset($to_delete) || $to_delete) {
+            unlink($override_path);
+        } else {
+            file_put_contents($override_path, $code);
+        }
+        PrestashopAutoload::getInstance()->generateIndex();
+        return true;
+    }
+    public static function isEnabled($module_name)
+    {
+        $id_module = Module::getModuleIdByName($module_name);
+        if (Db::getInstance()->getValue('SELECT `id_module` FROM `' . _DB_PREFIX_ . 'module_shop` WHERE `id_module` = ' . (int) $id_module)) {
+            return true;
+        }
+        return false;
+    }
+}

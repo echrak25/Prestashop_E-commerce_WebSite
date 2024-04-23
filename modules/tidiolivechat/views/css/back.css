@@ -1,0 +1,447 @@
+/**
+* 2007-2021 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2021 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+@font-face {
+    font-family: 'euclidcircularb';
+    src: url('../fonts/euclidcircularb-regular.woff2') format('woff2'),
+    url('../fonts/euclidcircularb-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'euclidcircularb';
+    src: url('../fonts/euclidcircularb-medium.woff2') format('woff2'),
+    url('../fonts/euclidcircularb-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'euclidcircularb';
+    src: url('../fonts/euclidcircularb-semibold.woff2') format('woff2'),
+    url('../fonts/euclidcircularb-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+#tidio-wrapper,
+#tidio-wrapper *,
+#tidio-wrapper *:before,
+#tidio-wrapper *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#tidio-wrapper {
+    background: #f1f1f1;
+    color: #080f1a;
+    height: 100%;
+    font-size: 16px;
+    max-width: 1234px;
+    z-index: 1;
+    position: relative;
+}
+
+#tidio-wrapper * {
+    font-family: 'euclidcircularb', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.tidio-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tidio-box {
+    background-color: #fff;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 12px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tidio-box-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.tidio-box-actions form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 360px;
+}
+
+.tidio-box-chat {
+    text-align: center;
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.tidio-box-chat h2, .tidio-box-actions h1 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;
+    max-width: 500px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.tidio-box-chat h2 {
+    letter-spacing: -0.03em;
+}
+
+.tidio-box-actions h1 {
+    margin: 32px 0;
+    padding-top: 48px;
+}
+
+.tidio-box p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.tidio-box p:last-of-type {
+    margin-bottom: 32px;
+}
+
+.tidio-box strong {
+    font-weight: 600;
+}
+
+.tidio-box-chat-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    background-image: url(../img/img-chat.png);
+    background-color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.tidio-box-actions form input,
+.tidio-box-actions form select,
+.tidio-box-actions form button,
+.tidio-box-actions form .button {
+    width: 100%;
+}
+
+.tidio-box-actions form input[type=password] {
+    margin-top: 16px;
+}
+
+.tidio-box-actions form input,
+.tidio-box-actions form input[type=email],
+.tidio-box-actions form input[type=password],
+.tidio-box-actions .select-selected {
+    height: 48px;
+    padding: 12px 16px 11px;
+    border-radius: 4px;
+    font-family: 'euclidcircularb', sans-serif !important;
+    font-size: 16px;
+    line-height: 24px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: solid 1px #bcc5d7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #080f1a;
+    background: none;
+    transition: none;
+    overflow: hidden;
+}
+
+.tidio-box-actions form input:focus,
+.tidio-box-actions form input[type=email]:focus,
+.tidio-box-actions form input[type=password]:focus,
+.tidio-box-actions .select-selected {
+    background: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.tidio-box-actions form input:focus,
+.tidio-box-actions form select:focus {
+    border-color: #0566ff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    outline: none;
+}
+
+.tidio-box-actions input::placeholder {
+    font-size: 16px;
+    font-style: normal;
+    color: #647491 !important;
+}
+
+.tidio-box-actions form .helper {
+    font-size: 12px;
+    color: #647491;
+    margin-left: 14px;
+    margin-top: 4px;
+    min-height: 17px;
+}
+
+.tidio-box-actions form .error {
+    display: none;
+    margin: 4px 0 0 14px;
+    color: #e81332;
+    font-size: 12px;
+}
+
+.tidio-box-actions form button,
+.tidio-box-actions form .button {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    background-color: #0566ff;
+    border: none;
+    border-radius: 4px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.tidio-box-actions form * + button,
+.tidio-box-actions form * + .button {
+    margin-top: 24px;
+}
+
+.tidio-box-actions form button:hover,
+.tidio-box-actions form button:focus,
+.tidio-box-actions form .button:hover,
+.tidio-box-actions form .button:focus {
+    color: #fff;
+    background-color: #0b5bda;
+    text-decoration: none;
+}
+
+.tidio-box-actions form button:disabled,
+.tidio-box-actions form .button:disabled {
+    color: #ACB8CB;
+    background-color: #EFF2F6;
+    cursor: not-allowed;
+}
+
+.tidio-box-actions form .btn-link {
+    font-size: 16px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #0566ff;
+    margin-top: 8px;
+    box-shadow: none;
+}
+
+.tidio-box-actions form .btn-link:hover,
+.tidio-box-actions form .btn-link:active,
+.tidio-box-actions form .btn-link:focus {
+    text-decoration: underline;
+    outline: none;
+    background-color: transparent;
+    border-color: transparent;
+    color: #0566ff;
+    box-shadow: none;
+}
+
+@media only screen and (min-width: 480px) {
+    .tidio-box-actions {
+        padding-top: 64px;
+    }
+
+    .tidio-box-actions h1 {
+        margin-top: 44px;
+    }
+
+    .tidio-box-chat h2 {
+        margin-top: 24px;
+    }
+
+    .tidio-box-chat {
+        padding-bottom: 330px;
+    }
+    .tidio-box-chat-image {
+        height: 330px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .tidio-box-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .tidio-box-actions {
+        flex-basis: 520px;
+        min-height: 532px;
+    }
+
+    .tidio-box-chat h2 {
+        margin-top: 32px;
+    }
+
+    .tidio-box-actions form {
+        align-items: flex-start;
+    }
+
+    .tidio-box-chat {
+        flex-basis: 666px;
+    }
+}
+
+#after-install-text {
+    display: none;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    overflow-y: auto;
+}
+
+.select-selected.disabled,
+.select-items .disabled {
+    color: #8894ab;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/chevron.svg) center center;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active {
+    border-color: #0566ff;
+}
+
+.select-selected.select-arrow-active:after {
+    transform: rotate(180deg);
+}
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {
+    color: #080f1a;
+    padding: 8px 15px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.select-items div.disabled {
+    cursor: not-allowed;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    z-index: 99;
+    max-height: 212px;
+    overflow-y: auto;
+    border: 1px solid #bcc5d7;
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(5, 102, 255, 0.08);
+    color: #0566ff;
+}
+
+.logos {
+    position: absolute;
+    width: 100%;
+    max-width: 128px;
+    display: inline-flex;
+    background: url(../img/plus.svg) 68px 18px no-repeat;
+}
+
+@media only screen and (min-width: 480px) {
+    .logos {
+        max-width: 360px;
+    }
+}
+
+.logo {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.logo + .logo {
+    margin-left: 53px;
+}
+
+.logo-tidio {
+    background: url(../img/logo-tidio.svg) #fff no-repeat center center;
+}
+
+.logo-prestashop {
+    background: url(../img/logo-prestashop.svg) #fff no-repeat center center;
+}

@@ -1,0 +1,19 @@
+.ets_cookie_banber_block{
+    width :ETS_CB_COOKIE_BANNER_WIDTHpx;
+    border: 1px solid ETS_CB_COOKIE_BANNER_BORDER;
+    background: ETS_CB_COOKIE_BANNER_BACKGROUND;
+    border-radius: ETS_CB_COOKIE_BANNER_RADIUSpx;
+    box-shadow: 0 0 7px -2px ETS_CB_COOKIE_BANNER_BORDER;
+}
+.btn.ets-cb-btn-ok,
+.btn.ets-cb-btn-ok:focus:not(:hover),
+.btn.ets-cb-btn-ok:active:not(:hover){
+    background: ETS_CB_COOKIE_BT_BACKGROUND;
+    color: ETS_CB_COOKIE_BUTTON_COLOR;
+    border-color: ETS_CB_COOKIE_BOTTON_BORDER;
+}
+.btn.ets-cb-btn-ok:hover{
+    background: ETS_CB_COOKIE_BT_BG_HOVER;
+    color: ETS_CB_COOKIE_BT_HOVER_COLOR;
+    border-color: ETS_CB_COOKIE_BT_BORDER_HOVER;
+}

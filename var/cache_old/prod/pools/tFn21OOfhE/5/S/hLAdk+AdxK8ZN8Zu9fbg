@@ -1,0 +1,3 @@
+<?php //PrestaShop%255CModule%255CMbo%255CController%255CAdmin%255CModuleCatalogController
+
+return [PHP_INT_MAX, []];

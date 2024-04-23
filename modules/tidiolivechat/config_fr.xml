@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>tidiolivechat</name>
+    <displayName><![CDATA[Chatbots, LiveChat et Messenger de Tidio]]></displayName>
+    <version><![CDATA[1.3.0]]></version>
+    <description><![CDATA[Chat en direct, chatbots et int&eacute;gration de Messenger pour offrir un support client de qualit&eacute; et augmenter vos ventes. Tidio est une plateforme de service client multifonctionnelle qui vous permet de g&eacute;n&eacute;rer activement plus de prospects et de ventes.]]></description>
+    <author><![CDATA[Tidio LLC]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Vous perdrez toutes les données relatives à ce module. Voulez-vous vraiment désinstaller Chatbots, LiveChat et Messenger de Tidio ? Veuillez noter que votre compte Tidio et votre abonnement resteront inchangés. Pour plus d'informations, veuillez consulter https://help.tidio.com/docs/uninstall-tidio ou contacter l'assistance via le chat sur notre site Web https://www.tidio.com]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

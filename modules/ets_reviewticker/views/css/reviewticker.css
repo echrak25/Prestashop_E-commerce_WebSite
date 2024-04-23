@@ -1,0 +1,305 @@
+.ets_reviewticker > li{
+    display: none;
+}
+.ets_reviewticker > li.active {
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+}
+.ets_reviewticker {
+  background: none repeat scroll 0 0 #FFFFFF;
+  box-shadow: 0 0 7px 0 #DDDDDD;
+  padding: 10px 30px 10px 10px;
+  position: fixed;
+  z-index: 100;
+  max-width: 400px;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+}
+.rt_alert_content p {
+  margin-bottom: 0;
+}
+.ets_reviewticker .done {
+  margin: 0;
+  padding: 0;
+}
+.rt_alert_content {
+  font-size: 13px;
+  line-height: 20px;
+}
+.rt_pos_botton_left {
+  bottom: 30px;
+  left: 30px;
+}
+.rt_pos_top_right {
+  top: 30px;
+  right: 30px;
+}
+.rt_pos_top_left {
+  top: 30px;
+  left: 30px;
+}
+.rt_pos_bottom_right {
+  bottom: 30px;
+  right: 30px;
+}
+.ets_rt_close span {
+  border: 1px solid #EEEEEE;
+  color: #999999;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: 18px;
+  line-height: 14px;
+  position: relative;
+  text-align: center;
+  width: 18px;
+}
+.ets_rt_close > span:after {
+  border-bottom: 1px solid #999999;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px) rotate(45deg);
+  -webkit-transform: translate3d(-50%, -50%, 0px) rotate(45deg);
+  width: 10px;
+}
+.ets_rt_close span:before {
+  border-left: 1px solid #999999;
+  content: "";
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px) rotate(45deg);
+  -webkit-transform: translate3d(-50%, -50%, 0px) rotate(45deg);
+}
+.ets_rt_close:hover span {
+  border-color: #999999;
+  color: #222;
+}
+.ets_rt_close:hover span:before,
+.ets_rt_close:hover span:after {
+  border-color: #333;
+}
+.ets_rt_close {
+  font-size: 0;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.ets_reviewticker img {
+  border: 1px solid #e0e0e0;
+  max-width: 100%;
+  width: 100%;
+  padding: 3px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+.ets_reviewticker li > a {
+  float: left;
+  margin-right: 10px;
+  width:150px;
+}
+.ets_reviewticker li.done {
+  color: inherit;
+}
+.rt_alert_content b {
+  color: #333333;
+}
+.rt_alert_content p {
+  font-size: 13px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.ets_reviewticker .star:after {
+  content: "\f006";
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #EEC522; 
+}
+
+.ets_reviewticker .star.star_on:after {
+    content: "\f005";
+    font-family: "FontAwesome";
+    display: inline-block;
+    color: #EEC522; }
+
+/**/
+.ets_reviewticker.rt_rtl li > a {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.ets_reviewticker.rt_rtl {
+  direction: rtl;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.rt_rtl .ets_rt_close {
+  left: 5px;
+  right: auto;
+}
+.ets_reviewticker .star_content {
+  display: flex;
+  display: -webkit-flex;
+  height: 15px;
+  text-align: left;
+}
+.ets_reviewticker .comments_note {
+  display: inline-block;
+}
+.ets_reviewticker em {
+  font-style: italic;
+}
+.ets_reviewticker.rt_rtl .star {
+  float: right;
+}
+.ets_reviewticker .star {
+  margin: 0 2px;
+}
+
+
+/**/
+
+
+@media (max-width: 767px){
+    .rt_pos_botton_left {
+      max-width: 300px;
+    }
+    .rt_hide_on_mobile{
+        display: none!important;
+    }
+    .rt_pos_botton_left {
+      bottom: 5px;
+      left: 15px;
+    }
+    .rt_pos_top_right {
+      top: 15px;
+      right: 15px;
+    }
+    .rt_pos_top_left {
+      top: 15px;
+      left: 15px;
+    }
+    .rt_pos_bottom_right {
+      bottom: 5px;
+      right: 15px;
+    }
+}
+@media (max-width: 479px){
+    .rt_pos_botton_left {
+      max-width: 250px;
+    }
+}
+
+
+
+/*effect hover*/
+/*----------------------fede effect-------------------*/
+.ets_reviewticker.rt_tran_fade_in {
+  opacity: 0;
+  visibility: hidden;
+}
+.ets_reviewticker.rt_tran_fade_in.active {
+  opacity: 1;
+  visibility: visible;
+}
+/*-----------vertical_scrolling bottom to top effect-------------------*/
+.ets_reviewticker.rt_tran_slide_up:not(.hovered) {
+  transform: translateY(150%);
+  -webkit-transform: translateY(150%);
+  -moz-transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  -o-transform: translateY(150%);
+  opacity: 0;
+  visibility: hidden;
+}
+.ets_reviewticker.rt_tran_slide_up.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+/*------------end of vertical_scrolling effect-------------*/
+
+/*-----------vertical_scrolling top to bottom effect-------------------*/
+.ets_reviewticker.rt_tran_slide_down {
+  transform: translateY(-150%);
+  -webkit-transform: translateY(-150%);
+  -moz-transform: translateY(-150%);
+  -ms-transform: translateY(-150%);
+  -o-transform: translateY(-150%);
+  opacity: 0;
+  visibility: hidden;
+}
+.ets_reviewticker.rt_tran_slide_down.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+/*------------end of vertical_scrolling effect-------------*/
+
+/*-----------horizontal_scrolling left to right effect-------------------*/
+.ets_reviewticker.rt_tran_slide_left {
+  transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
+  -moz-transform: translateX(-150%);
+  -ms-transform: translateX(-150%);
+  -o-transform: translateX(-150%);
+  opacity: 0;
+  visibility: hidden;
+}
+.ets_reviewticker.rt_tran_slide_left.active {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+/*------------end of horizontal_scrolling effect-------------*/
+
+/*-----------horizontal_scrolling right to left effect-------------------*/
+.ets_reviewticker.rt_tran_slide_right {
+  transform: translateX(150%);
+  -webkit-transform: translateX(150%);
+  -moz-transform: translateX(150%);
+  -ms-transform: translateX(150%);
+  -o-transform: translateX(150%);
+  opacity: 0;
+  visibility: hidden;
+}
+.ets_reviewticker.rt_tran_slide_right.active {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.ets_reviewticker.hovered
+{
+    display: block!important;
+}
+.ets_reviewticker.hovered li.active{
+    display: flex!important;
+    display: -webkit-flex!important;
+}

@@ -1,0 +1,13 @@
+body{
+
+}
+.mm_block_type_product .product_list .ajax_block_product {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 768px){
+    .hook-default.layout_layout5 .mm_menus_ul {
+      margin-bottom: -3px;
+    }
+}
+    

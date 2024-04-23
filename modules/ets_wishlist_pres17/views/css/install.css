@@ -1,0 +1,22 @@
+.products article .ets-wishlist-button-add.left {
+  left: ETS_WL_BUTTON_POSITION_LEFTpx!important;
+  top: ETS_WL_BUTTON_POSITION_TOPpx!important;
+}
+.products article .ets-wishlist-button-add.right {
+  right: ETS_WL_BUTTON_POSITION_RIGHTpx!important;
+  top: ETS_WL_BUTTON_POSITION_TOPpx!important;
+}
+.ets-wishlist-button-add:not(.view_page) {
+  background-color: ETS_WL_BT_BG_COLOR!important;
+}
+.ets-wishlist-button-add:not(.view_page):hover {
+  background-color: ETS_WL_BT_HOVER_BG_COLOR!important;
+}
+.ets-wishlist-button-add:not(.view_page):not(.delete_wishlist) svg {
+  color: ETS_WL_BT_COLOR!important;
+  fill: ETS_WL_BT_COLOR!important;
+}
+.ets-wishlist-button-add.delete_wishlist svg {
+  color: ETS_WL_BT_ACTIVE_COLOR!important;
+  fill: ETS_WL_BT_ACTIVE_COLOR!important;
+}

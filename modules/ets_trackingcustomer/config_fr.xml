@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ets_trackingcustomer</name>
+    <displayName><![CDATA[Activit&eacute;s des clients - Suivre/Afficher le comportement des clients]]></displayName>
+    <version><![CDATA[1.3.0]]></version>
+    <description><![CDATA[V&eacute;rifiez le comportement de vos clients lorsqu&#039;ils visitent votre boutique PrestaShop, les produits qu&#039;ils consultent et ceux qui les int&eacute;ressent le plus.]]></description>
+    <author><![CDATA[PrestaHero]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

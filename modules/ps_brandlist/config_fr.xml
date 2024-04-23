@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_brandlist</name>
+    <displayName><![CDATA[Liste des marques]]></displayName>
+    <version><![CDATA[1.0.3]]></version>
+    <description><![CDATA[Affichez vos marques sur votre catalogue et permettez &agrave; vos visiteurs de filtrer leurs recherches par marque.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

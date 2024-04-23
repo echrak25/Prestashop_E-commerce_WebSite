@@ -1,0 +1,120 @@
+.ets_cookie_banber_block {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px 30px 20px;
+    z-index: 10000;
+    border-radius: 0;
+    max-width: calc(100vw - 40px);
+    max-width: -webkit-calc(100vw - 40px);
+}
+button.ets-cb-btn-ok {
+    padding: 5px 10px;
+    font-weight: normal;
+    text-transform: none;
+}
+.ets_cookie_banber_block.left_bottom {
+    left: 20px;
+    bottom: 20px;
+    right: auto;
+}
+.ets_cookie_banber_block.bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: end;
+    -webkit-align-items: end;
+}
+.ets_cookie_banner_content img {
+    max-width: 100%;
+    height: auto;
+}
+a.btn.ets-cb-btn-ok {
+    font-weight: normal;
+    text-transform: none;
+    border-radius: 3px;
+}
+.ets_cookie_banner_content p:not(:first-child):last-child {
+    margin-bottom: 0;
+}
+.ets_cookie_banner_content p {
+    margin-bottom: 9px;
+}
+.ets_cookie_banner_footer {
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.ets_cookie_banber_block.bottom .ets_cookie_banner_footer {
+    text-align: center;
+}
+.ets_cookie_banber_block iframe {
+    max-width: 100%;
+}
+span.close_cookie:before,
+span.close_cookie:after {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -1px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+span.close_cookie:before {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+span.close_cookie {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+}
+.ets_cookie_banber_block.bottom > div {
+    padding: 0 15px;
+}
+span.close_cookie:hover:before, span.close_cookie:hover:after {
+    background: #555555;
+}
+.btn.btn-primary.full-left.ets-cb-btn-not-ok {
+    margin-top: 0;
+    background: #fff !important;
+    color: #000 !important;
+    border: 1px solid #ccc;
+    text-transform: none;
+    font-weight: normal;
+    border-radius: 4px;
+}
+.ets_cookie_banner_content {
+    line-height: 1.6;
+}
+.btn.btn-primary.full-left.ets-cb-btn-not-ok:hover {
+    background: #24b9d7 !important;
+    color: #fff !important;
+    border-color: #24b9d7 !important;
+}
+
+
+
+
+
+

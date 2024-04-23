@@ -1,0 +1,83 @@
+{#**
+ /**
+ * Copyright ETS Software Technology Co., Ltd
+ *
+ * NOTICE OF LICENSE
+ *
+ * This file is not open source! Each license that you purchased is only available for 1 website only.
+ * If you want to use this file on more websites (or projects), you need to purchase additional licenses.
+ * You are not allowed to redistribute, resell, lease, license, sub-license or offer our resources to any third party.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future.
+ *
+ * @author ETS Software Technology Co., Ltd
+ * @copyright  ETS Software Technology Co., Ltd
+ * @license    Valid for 1 website (or project) for each purchase of license
+ */
+ *#}
+
+{% set class = 'btn tooltip-link js-link-row-action' %}
+
+{% if attributes.class is defined %}
+  {% set class = class ~ ' ' ~ attributes.class %}
+{% endif %}
+
+  {% set route_params = { (action.options.route_param_name) : (record[action.options.route_param_field]) } %}
+  {%if action.options.extra_route_params is defined%}
+      {% set extra_route_params = action.options.extra_route_params %}
+    
+      {% for name, field in extra_route_params %}
+        {% set route_params = route_params|merge({ (name) : (record[field] ?? field) }) %}
+      {% endfor %}
+  {%endif%}
+{% if action.options.route == 'admin_orders_edit'%}
+    {% set url_link = '#' %}
+{%elseif action.options.route=='admin_orders_delete' %}
+    {% set url_link = ets_odm_link_order_delete ~ '&id_order=' ~ route_params.orderId %}
+{% elseif action.options.route=='admin_orders_duplicate' %}
+    {% set url_link = ets_odm_link_order_duplicate ~ '&id_order=' ~ route_params.orderId %}
+{% elseif action.options.route=='admin_orders_restore' %}
+    {% set url_link = ets_odm_link_order_restoreorder ~ '&id_order=' ~ route_params.orderId %}
+{% elseif action.options.route=='admin_orders_print_label_delivery' %}
+    {% set url_link = ets_odm_link_order_print_label_delivery ~ '&id_order=' ~ route_params.orderId %}
+{% elseif action.options.route=='admin_orders_login_as_customer' %}
+    {% set url_link = ets_odm_link_order_login_as_customer ~ '&id_order=' ~ route_params.orderId %}
+{% elseif action.options.route=='admin_customers_login_as_customer' %}
+    {% set url_link = ets_odm_link_order_login_as_customer ~ '&id_customer=' ~ route_params.customerId %}
+{% elseif action.options.route=='admin_customers_activities' %}
+    {% set url_link = ets_tc_link_customer_session ~ '&id_customer=' ~ route_params.customerId %}
+{% elseif action.options.route=='admin_customers_create_ticket_as_customer' %}
+    {% set url_link = ets_lc_link_customer_create_ticket ~ '&id_customer=' ~ route_params.customerId %}
+{%else%}
+    {% set url_link = path(action.options.route, route_params ) %}
+{%endif%}
+{%if (action.options.route!='admin_orders_print_label_delivery' or module_ets_ordermanager.checkOrderIsVirtual(route_params.orderId)!=true) and (action.options.route!='admin_orders_login_as_customer' or module_ets_ordermanager.checkOrderIsCustomer(route_params.orderId,0)==true) and (action.options.route!='admin_customers_login_as_customer' or module_ets_ordermanager.checkOrderIsCustomer(0,route_params.customerId)==true) %}
+    <a{%if action.options.route=='admin_orders_login_as_customer' or action.options.route=='admin_customers_login_as_customer' or action.options.route=='admin_customers_activities' %} target="_blank"{%endif%} class="{{ class }}{% if action.options.route == 'admin_orders_edit'%} edit edit_order_inline{%endif%}{% if action.options.route == 'admin_orders_duplicate'%} duplicate_order_list{%endif%}{% if action.options.route == 'admin_customers_create_ticket_as_customer'%} ets_lc_create_ticket{%endif%}"
+       href="{{url_link}}"
+       data-confirm-message="{{ action.options.confirm_message }}"
+      {% if attributes.tooltip_name %}
+        data-toggle="pstooltip"
+        data-placement="top"
+        data-original-title="{{ action.name }}"
+      {% endif %}
+      data-clickable-row="{{ action.options.clickable_row|default(false) }}"
+      {% if action.options.route == 'admin_customers_create_ticket_as_customer'%} data-id_customer="{{route_params.customerId}}"{%endif%}
+    >
+      {% if action.icon is not empty %}
+          {% if action.icon=='fa fa-truck' %}
+              <svg width="14" height="14" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M640 1408q0-52-38-90t-90-38-90 38-38 90 38 90 90 38 90-38 38-90zm-384-512h384v-256h-158q-13 0-22 9l-195 195q-9 9-9 22v30zm1280 512q0-52-38-90t-90-38-90 38-38 90 38 90 90 38 90-38 38-90zm256-1088v1024q0 15-4 26.5t-13.5 18.5-16.5 11.5-23.5 6-22.5 2-25.5 0-22.5-.5q0 106-75 181t-181 75-181-75-75-181h-384q0 106-75 181t-181 75-181-75-75-181h-64q-3 0-22.5.5t-25.5 0-22.5-2-23.5-6-16.5-11.5-13.5-18.5-4-26.5q0-26 19-45t45-19v-320q0-8-.5-35t0-38 2.5-34.5 6.5-37 14-30.5 22.5-30l198-198q19-19 50.5-32t58.5-13h160v-192q0-26 19-45t45-19h1024q26 0 45 19t19 45z"/></svg>
+          {% elseif action.icon=='fa fa-user' %}
+              <svg width="14" height="14" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1536 1399q0 109-62.5 187t-150.5 78h-854q-88 0-150.5-78t-62.5-187q0-85 8.5-160.5t31.5-152 58.5-131 94-89 134.5-34.5q131 128 313 128t313-128q76 0 134.5 34.5t94 89 58.5 131 31.5 152 8.5 160.5zm-256-887q0 159-112.5 271.5t-271.5 112.5-271.5-112.5-112.5-271.5 112.5-271.5 271.5-112.5 271.5 112.5 112.5 271.5z"/></svg>
+          {% else %}
+              <i class="fa {{ action.icon }}"></i>
+          {% endif %}
+      {% endif %}
+
+      {% if not attributes.tooltip_name %}
+        {{ action.name }}
+      {% endif %}
+    </a>
+{%endif%}

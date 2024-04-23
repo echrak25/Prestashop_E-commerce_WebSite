@@ -1,0 +1,25 @@
+<?php return array (
+  'parameters' => 
+  array (
+    'database_host' => '127.0.0.1',
+    'database_port' => '',
+    'database_name' => 'prestashop_finale_bd',
+    'database_user' => 'root',
+    'database_password' => '',
+    'database_prefix' => 'ps_',
+    'database_engine' => 'InnoDB',
+    'mailer_transport' => 'smtp',
+    'mailer_host' => '127.0.0.1',
+    'mailer_user' => NULL,
+    'mailer_password' => NULL,
+    'secret' => 'DVqPjPe1I7XbRjVgT4fGAGZvdfBEF42gm047bzT13HtpdaiHNMCMJUz31qIZWD9I',
+    'ps_caching' => 'CacheMemcache',
+    'ps_cache_enable' => false,
+    'ps_creation_date' => '2024-03-29',
+    'locale' => 'fr-FR',
+    'use_debug_toolbar' => true,
+    'cookie_key' => 'HVg0BajEMeyaOrWbG34ITByMoCNPBNUbci2ObokcgeLUT36vGx8Mg39B0iuv0nWC',
+    'cookie_iv' => 'DB82Qug6icDkQNQ4dSKNe3nVQIhZVwxO',
+    'new_cookie_key' => 'def000004a883fbf30cc90c49414434543b0895dbdf0386b1a44475c8be6a789af53762732615abaf89fbf9e1aceb7b343a6a3ca78b87f1abeb9255d54eba69c85be5b17',
+  ),
+);

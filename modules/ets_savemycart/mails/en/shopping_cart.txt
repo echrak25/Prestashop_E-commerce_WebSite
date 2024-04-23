@@ -1,0 +1,46 @@
+
+[{shop_url}] 
+
+Dear {recipients_name},
+
+The below Products/Shopping cart has been sent to you through the {shop_name} and a
+PDF version is attached for your convenience.
+
+REFERENCE
+
+PRODUCT
+
+UNIT PRICE
+
+QUANTITY
+
+TOTAL PRICE
+
+{products_txt} 
+
+{discounts} 
+
+PRODUCTS 
+
+{total_products}
+
+SHIPPING 
+
+{total_shipping}
+
+TOTAL
+
+{total}
+
+So, what can you do with this shopping cart?
+You can now view this shopping cart on the {shop_name}, change
+product quantities, update the cart & vouchers, and place your order securely online.
+Click Here To View This Shopping Cart Online [{shopping_cart_link}]
+Or
+You can simply forward this to someone else.
+If you need any further assistance, Contact Us!
+
+
+{shop_name} [{shop_url}] powered by
+PrestaShop(tm) [http://www.prestashop.com/] 
+

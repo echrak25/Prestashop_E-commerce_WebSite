@@ -1,0 +1,80 @@
+.ets-wa-group-number-phone .js-dropdown-item.dropdown-item {
+  display: block;
+  width: 100%;
+  border: none;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.ets-wa-group-number-phone .btn.btn-secondary.dropdown-toggle:before {
+  content: "";
+  border-top: 5px solid #777;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  margin-top: -2px;
+  border-radius: 2px;
+}
+.col-lg-2.ETS_WA_ADJUST_RIGHT_item {
+  width: 160px;
+}
+.col-lg-2.ETS_WA_ADJUST_RIGHT_item label.control-label {
+  padding-right: 0;
+  margin-bottom: 6px;
+}
+.ets-wa-group-number-phone .js-dropdown-item.dropdown-item img {
+  display: inline-block;
+  vertical-align: -1px;
+  margin-right: 2px;
+}
+.ets-wa-group-number-phone .js-dropdown-item.dropdown-item:last-child {
+  border-bottom: none;
+}
+.input-group.ets-wa-group-number-phone .input-group-addon.call_prefix {
+  padding-left: 0;
+  padding-right: 0;
+  width: 50px;
+  border-right: none;
+}
+input#ETS_WA_NUMBER_PHONE {
+  width: 200px;
+}
+.ets-wa-group-number-phone .btn.btn-secondary.dropdown-toggle {
+  width: 100%;
+  background: none;
+  white-space: nowrap;
+  display: block;
+  text-align: left;
+  padding: 0 25px 0 10px;
+  min-height: 36px;
+  line-height: 34px;
+}
+.ets-wa-group-number-phone .input-group-addon.country {
+  padding: 0;
+}
+.ets-wa-group-number-phone .dropdown-menu.js-choice-options {
+  max-height: 200px;
+  overflow-y: scroll;
+  width: 100%;
+  min-width: 300px;
+  text-align: left;
+}
+.ets-wa-group-number-phone .dropdown-toggle{
+    padding: 0;
+}
+.ets-wa-group-number-phone .input-group-addon.country {
+  min-width: 200px;
+  background: #ffffff;
+}
+.js-dropdown-item.dropdown-item {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 1px solid #ccc;
+  border-right: 0 none;
+  padding: 10px;
+}
+.ets-wa-group-number-phone button {
+  outline: none!important;
+  box-shadow: none!important;
+}

@@ -1,0 +1,99 @@
+
+/**/
+body.ybc-skin-red{
+    /*background: #ffffff!important;*/
+}
+
+body.ybc-skin-red *::-webkit-selection{
+    background-color: #EC4249;
+    color: #ffffff;
+}
+
+body.ybc-skin-red *::-ms-selection{
+    background-color: #EC4249;
+    color: #ffffff;
+}
+
+body.ybc-skin-red *::-moz-selection{
+    background-color: #EC4249;
+    color: #ffffff;
+}
+
+body.ybc-skin-red *::selection{
+    background-color: #EC4249;
+    color: #ffffff;
+}
+
+body.ybc-skin-red a:not(.btn):hover,
+body.ybc-skin-red #header .ybc-widget-ybc-custom-4 li a:hover,
+body.ybc-skin-red .ybc_coppyright a,
+body.ybc-skin-red .product-price-and-shipping,
+body.ybc-skin-red #header a:hover,
+body.ybc-skin-red .search_icon_toogle:hover,
+body.ybc-skin-red #blockcart-modal .product-name,
+body.ybc-skin-red .product-price,
+body.ybc-skin-red .nav-item .nav-link.active, 
+body.ybc-skin-red .nav-item .nav-separtor.active,
+body.ybc-skin-red .cart-total .value,
+body.ybc-skin-red .star.star_on,
+body.ybc-skin-red div.star.star_hover:after,
+body.ybc-skin-red .block-categories .collapse-icons .add:hover, 
+body.ybc-skin-red .block-categories .collapse-icons .remove:hover,
+body.ybc-skin-red .block-social li:hover a:before,
+body.ybc-skin-red .dropdown:hover .expand-more,
+body.ybc-skin-red .dropdown:hover > a,
+body.ybc-skin-red .product-prices div,
+body.ybc-skin-red .block_newsletter form .newsletter_submit:hover,
+body.ybc-skin-red #header.header_v1 .search_icon_toogle:hover, 
+body#index.ybc-skin-red .maincontent_v1 .mls_nav > div:hover,
+body.ybc-skin-red .comments_note div.star.star_on:after,
+body.ybc-skin-red .mm_menus_li:hover > a,
+body.ybc-skin-red.page-my-account #content .links a:hover i,
+body.ybc-skin-red .social-sharing li a:hover:before{
+    color: #EC4249;
+}
+
+body.ybc-skin-red .custom_theme span{
+    color: #EC4249!important; 
+}
+
+
+body.ybc-skin-red .ybc-widget-item-link:hover,
+body.ybc-skin-red .cart-preview .cart-products-count,
+body.ybc-skin-red .discount-percentage,
+body.ybc-skin-red #blockcart-modal .modal-header,
+body.ybc-skin-red .search-widget form button[type="submit"]:hover,
+body.ybc-skin-red .cart-wishlist-checkout:hover,
+body.ybc-skin-red .btn-primary:hover,
+body.ybc-skin-red #new_comment_form button:hover,
+body.ybc-skin-red .pagination .current a,
+body.ybc-skin-red .products-sort-order .select-list:hover,
+body.ybc-skin-red .mls_pag_button.active,
+body.ybc-skin-red .btn-secondary:hover, 
+body.ybc-skin-red .btn-tertiary:hover,
+body.ybc-skin-red .scroll_top.show_scroll,
+body.ybc-skin-red.ybc-layout-layouthome2 .mls_nav > div:hover,
+body.ybc-skin-red .custom-radio input[type="radio"]:checked + span,
+body.ybc-skin-red a#wishlist_button:hover,
+body.ybc-skin-red .panel-product-w-custom .wishlist_button_extra:hover,
+body.ybc-skin-red #footer .ybc-theme-panel-inner #ybc_tc_float_header li.active{
+    border-color: #EC4249;
+    background-color: #EC4249;
+}
+body.ybc-skin-red .ybc-theme-panel-btn{
+    border-left-color: #EC4249;
+}
+
+
+body.ybc-skin-red .mm_has_sub:hover > a:after,
+body.ybc-skin-red .pagination a:hover,
+body.ybc-skin-red .block-social li a:hover,
+body.ybc-skin-red .social-sharing li a:hover,
+body.ybc-skin-red .product_thumb_horizontal .js-qv-product-images img.selected,
+body.ybc-skin-red .block_newsletter form input[type="text"]:focus{
+    border-color: #EC4249;
+}
+
+body.ybc-skin-red .form-control:focus {
+  outline-color: #EC4249;
+}

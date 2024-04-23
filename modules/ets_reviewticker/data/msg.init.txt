@@ -1,0 +1,1 @@
+<p>A customer (<strong>[customer_name]</strong>) left a comment on <strong><a href="[product_link]">[product_name]</a></strong> [time_ago]<br /> Rating: [grade]<br /><em>"[content_comment]"</em></p>

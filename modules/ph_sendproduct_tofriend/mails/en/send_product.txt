@@ -1,0 +1,2 @@
+Hello {receiver},
+Your friend {customer_name} has send a product to you.

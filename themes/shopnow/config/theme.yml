@@ -1,0 +1,303 @@
+name: shopnow
+display_name: shopnow
+version: 1.0.9
+author:
+  name: "YBC-Theme"
+  email: "pub@prestashop.com"
+  url: "http://www.prestashop.com"
+
+meta:
+  compatibility:
+      from: 1.7.0.0
+      to: ~
+
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: Two columns with a small left column
+    layout-right-column:
+      name: Two Columns, small right column
+      description: Two columns with a small right column
+
+assets:
+  # If you're using this theme as child and you want to load
+  # the parent theme assets, uncomment this line.
+#  use_parent_assets: true
+
+  # The following lines are showing how to load assets in your page
+  # Uncomment and change value to start loading css or js files
+#  css:
+#    all:
+#      - id: custom-lib-style
+#        path: assets/css/custom-lib.css
+#    product:
+#      - id: product-style
+#        path: assets/css/product.css
+#        media: all
+#        priority: 200
+#  js:
+#    cart:
+#      - id: cat-extra-lib
+#        path: assets/js/cart-lib.js
+
+
+global_settings:
+  configuration:
+    PS_IMAGE_QUALITY: png
+  modules:
+   to_enable:
+     - ps_linklist
+     - ps_categoryproducts
+     - ps_bestsellers
+     - ps_specials
+     - ps_newproducts
+     - ps_viewedproduct
+     - ps_categorytree
+     - ybc_specificprices
+   to_reset:
+        - productcomments
+        - ets_megamenu
+        - ets_multilayerslider
+        - ets_reviewticker
+        - pleasewait
+        - ybc_newsletter
+        - ybc_productimagehover
+        - ybc_themeconfig
+        - ybc_widget
+        - ybc_manufacturer
+  hooks:
+    modules_to_hook:
+      blogCategoriesBlock:
+        - ybc_blog_free
+      blogFeaturedPostsBlock:
+        - ybc_blog_free
+      blogGalleryBlock:
+        - ybc_blog_free
+      blogNewsBlock:
+        - ybc_blog_free
+      blogPopularPostsBlock:
+        - ybc_blog_free
+      blogSearchBlock:
+        - ybc_blog_free
+      blogSidebar:
+        - ybc_blog_free
+      blogSlidersBlock:
+        - ybc_blog_free
+      blogTagsBlock:
+        - ybc_blog_free
+      customcategories:
+        - ps_categorytree_mod
+      displayBackOfficeHeader:
+        - ybc_themeconfig
+        - ybc_manufacturer
+        - productcomments
+        - ets_multilayerslider
+        - ets_megamenu
+        - ets_reviewticker
+        - ybc_newsletter
+        - ets_purchasetogether
+        - ybc_widget
+        - ybc_blog_free
+        - ~
+      displayBlock:
+        - ets_megamenu
+      displayCrossSellingShoppingCart:
+        - ps_featuredproducts
+      displayCustomDiscount:
+        - ybc_specificprices
+      displayCustomerAccount:
+        - blockwishlist
+      displayFooter:
+        - ps_contactinfo
+        - ps_customeraccountlinks
+        - ps_linklist
+        - ps_emailsubscription
+        - ybc_themeconfig
+        - ets_reviewticker
+        - ybc_newsletter
+        - ets_purchasetogether
+        - ybc_widget
+        - ybc_specificprices
+        - ybc_blog_free
+      displayFooterBefore:
+        - ps_socialfollow
+        - pleasewait
+      displayFooterProduct:
+        - ps_viewedproduct
+        - ps_categoryproducts
+        - ets_purchasetogether
+      displayHome:
+        - ets_multilayerslider
+        - ybc_widget
+        - ps_featuredproducts
+        - ps_newproducts
+        - ps_specials
+        - ps_bestsellers
+        - ybc_blog_free
+        - ybc_manufacturer
+      displayLeftColumn:
+        - ps_facetedsearch
+        - ps_categorytree
+        - ybc_widget
+        - ybc_blog_free
+      displayLeftColumnProduct:
+        - ets_purchasetogether
+      displayMegaMenu:
+        - ets_megamenu
+      displayMLS:
+        - ets_multilayerslider
+      displayMLSConfigs:
+        - ets_multilayerslider
+      displayMLSLayer:
+        - ets_multilayerslider
+      displayMLSLayerSort:
+        - ets_multilayerslider
+      displayMLSSlide:
+        - ets_multilayerslider
+      displayMLSSlideInner:
+        - ets_multilayerslider
+      displayMLSSlider:
+        - ets_multilayerslider
+      displayMMItemBlock:
+        - ets_megamenu
+      displayMMItemColumn:
+        - ets_megamenu
+      displayMMItemMenu:
+        - ets_megamenu
+      displayMultiLayerSlide:
+        - ets_multilayerslider
+      displayMyAccountBlock:
+        - blockwishlist
+      displayNav:
+        - ybc_widget
+      displayNav1:
+        - ps_contactinfo
+      displayNav2:
+        - ps_customersignin
+        - ps_languageselector
+        - ps_currencyselector
+      displayOrderConfirmation2:
+        - ps_featuredproducts
+      displayPaymentReturn:
+        - ps_checkpayment
+        - ps_wirepayment
+      displayProductAdditionalInfo:
+        - ps_sharebuttons
+        - blockwishlist
+        - ets_purchasetogether
+      displayProductButtons:
+        - ps_sharebuttons
+      displayProductListFunctionalButtons:
+        - blockwishlist
+      displayReassurance:
+        - blockreassurance
+      displayRightColumn:
+        - blockwishlist
+        - ybc_widget
+      displaySearch:
+        - ps_searchbar
+      displayTop:
+        - ps_shoppingcart
+        - ps_searchbar
+        - ets_megamenu
+        - blockwishlist
+        - ets_purchasetogether
+        - ybc_widget
+      displayTopColumn:
+        - ybc_widget
+      NewsletterCustom:
+        - ybc_newsletter
+      paymentOptions:
+        - ps_checkpayment
+        - ps_wirepayment
+      productcustom:
+        - blockwishlist
+      productImageHover:
+        - ybc_productimagehover
+      productSearchProvider:
+        - ps_facetedsearch
+      search:
+        - statssearch
+      ybcBlockSocial:
+        - ybc_themeconfig
+      ybcCopyright:
+        - ybc_themeconfig
+      ybcCustom1:
+        - ybc_widget
+      ybcCustom2:
+        - ybc_widget
+      ybcCustom3:
+        - ybc_widget
+      ybcCustom4:
+        - ybc_manufacturer
+        - ybc_widget
+      ybcLayoutUpdate:
+        - ybc_themeconfig
+      
+
+  image_types:
+    cart_default:
+      width: 130
+      height: 130
+      scope: [products]
+    small_default:
+      width: 100
+      height: 100
+      scope: [products, categories, manufacturers, suppliers]
+    medium_default:
+      width: 452
+      height: 452
+      scope: [products, manufacturers, suppliers]
+    home_default:
+      width: 450
+      height: 450
+      scope: [products]
+    large_default:
+      width: 800
+      height: 800
+      scope: [products, manufacturers, suppliers]
+    category_default:
+      width: 850
+      height: 226
+      scope: [categories]
+    stores_default:
+      width: 170
+      height: 115
+      scope: [stores]
+
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    search: layout-left-column
+    contact: layout-full-width
+
+dependencies:
+  modules:
+   - blockwishlist
+   - productcomments
+   - ets_megamenu
+   - ets_multilayerslider
+   - ets_reviewticker
+   - ets_purchasetogether
+   - ps_specials
+   - ps_bestsellers
+   - ps_newproducts
+   - pleasewait
+   - ybc_newsletter
+   - ybc_productimagehover
+   - ybc_themeconfig
+   - ybc_widget
+   - ybc_specificprices
+   - ybc_blog_free
+   - ybc_manufacturer
+   - ps_categorytree_mod

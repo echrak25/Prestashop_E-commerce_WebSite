@@ -1,0 +1,13 @@
+ div.star_on {
+  background-position: 0 -12px;
+}
+.rt_alert_content .star {
+  height: 12px;
+  margin: 2px 3px 3px 0px;
+}
+.ets_reviewticker .comments_note {
+  padding-bottom: 3px;
+}
+.ets_reviewticker .star.star_on {
+  background-position: 0 -12px;
+}

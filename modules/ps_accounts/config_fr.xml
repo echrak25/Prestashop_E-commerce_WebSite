@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_accounts</name>
+    <displayName><![CDATA[PrestaShop Account]]></displayName>
+    <version><![CDATA[6.3.2]]></version>
+    <description><![CDATA[Associez votre boutique &agrave; votre compte PrestaShop pour activer et g&eacute;rer vos abonnements dans votre back office. Ne d&eacute;sinstallez pas ce module si vous avez un abonnement en cours.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[Cette action empêchera immédiatement vos services PrestaShop et Community Services de fonctionner car ils utilisent le module PrestaShop Account pour l'authentification.]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

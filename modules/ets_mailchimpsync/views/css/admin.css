@@ -1,0 +1,68 @@
+.icon_svg_export{
+    display:inline-block;
+}
+.icon_svg_export svg{
+    width:16px;
+    height:auto;
+}
+.box_btn_edit_delete{
+    display:inline-block;
+}
+
+.how_get_mailchim{
+    margin-top: 7px;
+    display: inline-block;
+}
+@media (max-width:1200px){
+    .wrapper_btn_action{
+        float:left;
+    }
+    .wrapper_btn_action a {
+        float:left;
+    }
+    .bootstrap .box_btn_edit_delete a.btn {
+        padding : 6px 5px;
+    }
+}
+
+.bootstrap .alert.alert_api_invaild{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.content_list_mail .filter-list-tbl{
+    float:left;
+    width:100%;
+}
+
+.ets_mailchim_pagg{
+    float:right;
+}
+.ets_mailchim_pagg .links{
+    float:left;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+.ets_mailchim_pagg .links a,
+.ets_mailchim_pagg .links b {
+    border: 1px solid #b5babd;
+    padding: 2px 7px;
+    color: #555;
+    float: left;
+    margin-left: 5px;
+}
+.ets_mailchim_pagg .links a.next,
+.ets_mailchim_pagg .links a.prev {
+    padding: 2px 6px;
+}
+.ets_mailchim_pagg .links b {
+    background-color: #00AFF0;
+    color: #fff;
+    border: 1px solid #00AFF0;
+}
+
+.content_list_mail ~ .bootstrap.panel{
+    float:left;
+    width:100%;
+}

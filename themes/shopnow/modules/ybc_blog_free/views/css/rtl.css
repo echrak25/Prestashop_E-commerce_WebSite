@@ -1,0 +1,166 @@
+.ybc_blog_free_rtl_mode *, .ybc_blog_free_rtl .ybc-blog-wrapper, .ybc_blog_free_rtl .ybc-blog-wrapper *,
+.ybc_blog_free_rtl .ybc-blog-wrapper-detail, .ybc_blog_free_rtl .ybc-blog-wrapper-detail * {
+  direction: rtl;
+}
+#left-column .ybc_block_categories a::before, 
+#left_column .ybc_block_categories a::before, 
+#right-column .ybc_block_categories a::before, 
+#right_column .ybc_block_categories a::before {
+  float: right;
+  margin-right: 0;
+  margin-left: 5px;
+  content: "\f104";
+}
+#left-column .ybc-blog-latest-toolbar > span:not(:last-child), #left_column .ybc-blog-latest-toolbar > span:not(:last-child), #right-column .ybc-blog-latest-toolbar > span:not(:last-child), #right_column .ybc-blog-latest-toolbar > span:not(:last-child) {
+  margin-right: 0;
+}
+.ybc-blog-rtl .ybc-blog-wrapper-detail, .ybc-blog-rtl .ybc-blog-wrapper-detail *,
+.ybc-blog-rtl .ybc-blog-wrapper, .ybc-blog-rtl .ybc-blog-wrapper * {
+  direction: rtl;
+}
+.ybc-block-comment-report {
+  margin-right: 10px;
+}
+.owl-stage-outer {
+  direction: ltr !important;
+}
+.ybc_block_search .button, .icon_search {
+  left: 0;
+  right: auto;
+}
+.ybc_block_slider .owl-controls, .ybc_blog_free_related_posts_type_carousel .owl-controls, 
+.ybc_related_products_type_carousel .owl-controls {
+  left: -5px;
+  right: auto;
+}
+.comment-by, .comment-time, .comment-rating, .comment-content, .ybc-blog-like-span, .blog-rate-post,
+.ybc_block_gallery ul > li, .ybc_item_img{
+    float: right;
+}
+.ybc-blog-latest-toolbar > span:not(:last-child), 
+.blog_rating_wrapper, .blog_rating_reviews {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.ybc_block_categories .title_blog {
+  margin-bottom: 20px;
+}
+.blog-extra-item.be-rating-block {
+  float: right;
+}
+.ybc-blog-latest-toolbar-comments::before, .ybc-blog-like-span::before, 
+.ybc-blog-latest-toolbar-views::before, .blog__rating_reviews::before, .total_views::before {
+  float: right;
+  padding-left: 3px;
+  padding-right: 1px;
+}
+#left-column .ybc-blog-latest-toolbar > span:not(:last-child) {
+  margin-right: 0;
+}
+.ybc-blog-tags-social {
+  float: right;
+}
+.page-heading .title_cat {
+  text-align: right;
+}
+#left-column .ybc_block_categories a::before {
+  content: "\f104";
+  margin-right: 0;
+  margin-left: 5px;
+  float: right;
+}
+.be-label {
+  float: right;
+  margin-left: 5px;
+}
+#ybc-blog-capcha-img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#ybc-blog-capcha-refesh::before {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.blog-capcha {
+  clear: right;
+  float: right;
+}
+.be-rating-block > span {
+  float: right;
+}
+.ybc-blog-latest-toolbar-comments {
+  float: right;
+  white-space: nowrap;
+}
+.blog_rating_box .star {
+  float: right;
+}
+.comment-by {
+  margin-right: 0;
+}
+.blog-comment-row .blog-capcha label {
+  line-height: 26px;
+  margin-right: 0;
+}
+.ybc_blog_free_rtl .blog-comment-row label {
+  float: right;
+  margin-right: 0;
+}
+.ybc_blog_free_rtl ul.product_list > .ajax_block_product {
+  float: right;
+}
+.ybc_blog_free_rtl .ybc-blog-list li {
+  float: right;
+}
+.ybc_blog_free_rtl_mode .block_content > li,
+.page_home.ybc_block_default ul li {
+  float: right;
+}
+.page_home.ybc_block_default ul li:nth-child(2n+1) {
+  float: right;
+}
+.ybc-blog-wrapper .ybc_title_block {
+  text-align: right;
+}
+.ybc_blog_free_rtl .ybc-blog-replied-by {
+  float: right;
+  margin-left: 0;
+  margin-right: 10px;
+}
+.ybc_blog_free_rtl .ybc-blog-reply-content {
+  clear: right;
+  float: right;
+  margin-right: 10px;
+}
+.ybc_blog_free_rtl .ybc-blog-replied-by::before {
+  content: "\f112";
+  float: right;
+  font-family: FontAwesome;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-right: 0;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .page_home.ybc_block_default ul li:nth-child(3n+1) {
+      clear: right;
+    }
+}
+@media (min-width: 768px){
+    .ybc_blog_free_layout_large_list .ybc-blog-list li:nth-child(n+2) .ybc-blog-wrapper-content, 
+    .ybc_blog_free_layout_list .ybc-blog-list li .ybc-blog-wrapper-content {
+      float: left;
+      padding-right: 30px;
+      padding-left: 0;
+      width: 62%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    .page_home.ybc_block_default ul li:nth-child(2n+1) {
+      clear: right;
+    }
+}
+
+
+

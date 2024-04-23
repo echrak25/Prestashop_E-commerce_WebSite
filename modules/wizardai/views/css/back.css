@@ -1,0 +1,283 @@
+.wizardai-cron-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizardai-cron-label {
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: solid 1px #d3d8db;
+    background: #363A41;
+    color: white;
+    border-right: 0px;
+}
+
+.wizardai-cron-link {
+    padding: 5px;
+    border: solid 1px #d3d8db;
+    background: white;
+}
+
+.CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
+    color: #ffffff!important;
+}
+
+.cm-s-darcula span.cm-tag {
+    color: #3ed2f0!important;
+}
+/* CodeMirror styles for Twig */
+.cm-s-darcula span.cm-variable {
+    color: #39b9d3 !important;
+}
+
+.wizardai-prompteditor + .CodeMirror{
+    width: 70%;
+    display: inline-block;
+}
+
+.wizardai-prompteditor-proprieties {
+    width: 29%;
+    display: inline-flex!important;
+    height: 300px;
+    position: absolute;
+    border: 1px;
+    border: solid;
+    overflow-y: scroll;
+}
+
+.wizardai-prompteditor-proprieties {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.wizardai-prompteditor-proprieties li {
+    padding: 1rem;
+    border-bottom: 1px solid;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.wizardai-prompteditor-proprieties li:hover {
+    padding: 1rem;
+    border-bottom: 1px solid;
+    background-color: #25b9d7;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.wizardai-prompteditor-proprieties li:last-child {
+    border-bottom: 0px solid;
+}
+
+.wizardai-hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.wizardai-hr:before, .wizardai-hr:after {
+    content: "";
+    display: block;
+    border-top: 1px solid #dbe6e9;
+    width: 100%;
+    height: 1px;
+    margin: 0px 1rem;
+}
+
+
+.icon-open {
+    /* Classe pour l'icône "ouvert" (par exemple, un chevron vers le bas) */
+    font-family: 'Font Awesome 5 Free';
+    content: '\f078'; /* Code Unicode pour fa-chevron-down */
+}
+
+.icon-closed {
+    /* Classe pour l'icône "fermé" (par exemple, un chevron vers la droite) */
+    font-family: 'Font Awesome 5 Free';
+    content: '\f054'; /* Code Unicode pour fa-chevron-right */
+}
+
+.checkerboard-background {
+    position: relative;
+    background-image: linear-gradient(45deg, #A0A0A0 25%, transparent 25%, transparent 75%, #A0A0A0 75%, #A0A0A0),
+    linear-gradient(45deg, #A0A0A0 25%, transparent 25%, transparent 75%, #A0A0A0 75%, #A0A0A0);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+}
+
+.max-image-h-modal {
+    max-height: 500px!important;
+}
+
+@keyframes twinkling {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    animation: twinkling 1s infinite ease-in-out, rotate 6s infinite linear;
+    z-index: 10;
+}
+
+.loading .star {
+    display: block;
+}
+
+.skeleton-screen {
+    position: relative;
+    overflow: hidden;
+}
+.skeleton-screen::before, .loading-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #f3f3f3 50%, #e0e0e0 50%);
+    background-size: 200% 100%;
+    animation: loadingBackground 2s linear infinite;
+    z-index: 1;
+    opacity: .90;
+}
+
+@keyframes loadingBackground {
+    from {
+        background-position: 200% 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+.wizardai-icons-round {
+    font-family: Material Icons Round;
+    height: 24px;
+    width: 24px;
+}
+
+ .wizardai-icons-round.wizardai-icon-check, .wizardai-icons-round.wizardai-icon-cancel {
+     --tw-text-opacity: 1;
+     color: rgb(255 255 255 / var(--tw-text-opacity));
+ }
+ .wizardai-icons-round.wizardai-icon-check, .wizardai-icons-round.wizardai-icon-cancel {
+     padding: 0.25rem;
+ }
+ .wizardai-icons-round.wizardai-icon-check {
+     --tw-bg-opacity: 1;
+     background-color: rgb(32 127 75 / var(--tw-bg-opacity));
+ }
+.wizardai-icons-round.wizardai-icon-cancel {
+    --tw-bg-opacity: 1;
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity)); /* Dark red background */
+}
+ .wizardai-icons-round {
+     border-radius: 9999px;
+ }
+.wizardai-icons-round {
+     margin-right: 0.5rem;
+ }
+
+#ps-billing {
+    margin-bottom: 1rem;
+}
+
+.wizardai-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(221 221 221 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding: 1rem;
+    font-weight: 400;
+}
+
+.bootstrap .wizardai-link {
+    color: #25b9d7!important;
+    text-decoration: none;
+}
+
+.wizardai-link:hover {
+    color: #25b9d7!important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Le fond de la modal */
+.wizardai-modal {
+    display: none; /* Caché par défaut */
+    position: fixed; /* Reste en place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Pleine largeur */
+    height: 100%; /* Pleine hauteur */
+    overflow: auto; /* Permettre le défilement si nécessaire */
+    background-color: rgb(0,0,0); /* Couleur de fond */
+    background-color: rgba(0,0,0,0.4); /* Noir avec opacité */
+    z-index: 99999;
+}
+
+/* Contenu/Boîte de la modal */
+.wizardai-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% du haut et centré horizontalement */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Peut être plus ou moins, selon votre style */
+    max-width: 800px;
+}
+
+/* Le bouton Fermer (x) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wizardai-modal ul {
+    /* remove ul reset */
+    list-style: disc;
+    margin-left: 1rem;
+}

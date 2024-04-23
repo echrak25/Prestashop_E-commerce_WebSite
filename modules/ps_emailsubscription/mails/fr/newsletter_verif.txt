@@ -1,0 +1,12 @@
+ 
+
+{shop_url}
+
+Bonjour,
+
+Merci de vous être abonné à notre newsletter. Veuillez cliquer sur le lien suivant pour confirmer :
+{verif_url}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop-project.org/)

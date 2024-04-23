@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ets_addtocart_fromlist</name>
+    <displayName><![CDATA[Add to cart from list]]></displayName>
+    <version><![CDATA[1.0.3]]></version>
+    <description><![CDATA[Enable customers to quickly add a product to cart without a need to go to product page]]></description>
+    <author><![CDATA[ETS-Soft]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

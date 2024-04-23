@@ -1,0 +1,32 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{pleasewait}prestashop>pleasewait_0b171b59d90e2a5595bae5ae075d8bd1'] = 'S\'il vous plaît, attendez...!';
+$_MODULE['<{pleasewait}prestashop>pleasewait_6e5a2ae4d41d81d1439888aafed7faf5'] = 'Afficher une icône de chargement pendant le chargement de votre site Web';
+$_MODULE['<{pleasewait}prestashop>pleasewait_92328ef0a137839f00cf029c11501175'] = 'Activer l\'icône de chargement';
+$_MODULE['<{pleasewait}prestashop>pleasewait_6d6c669b98589d5cd2abea03d3cea936'] = 'Type d\'icône de chargement';
+$_MODULE['<{pleasewait}prestashop>pleasewait_fc23ffe3bc715a46cc8b63071ded5fda'] = 'Taille des icônes';
+$_MODULE['<{pleasewait}prestashop>pleasewait_4c2a8fe7eaf24721cc7a9f0175115bd4'] = 'Message';
+$_MODULE['<{pleasewait}prestashop>pleasewait_fa69ac6795d55bd7a44fe47ae4a7a854'] = 'Affichage uniquement sur la page d\'accueil';
+$_MODULE['<{pleasewait}prestashop>pleasewait_534b7c706186028f1b4f51344bbca176'] = 'Couleur de l\'icône';
+$_MODULE['<{pleasewait}prestashop>pleasewait_5f111ae4c490902059da2004cbc8b424'] = 'Couleur de texte';
+$_MODULE['<{pleasewait}prestashop>pleasewait_368d9ac76af05f714092bc808a426bfc'] = 'Couleur de fond';
+$_MODULE['<{pleasewait}prestashop>pleasewait_96fd2b796454b8598b7029086421930c'] = 'Opacité de fond';
+$_MODULE['<{pleasewait}prestashop>pleasewait_25e56d2ad1d3e904ef3e481e6fca76e1'] = 'L\'opacité de fond est un nombre de flotteurs de 0 à 1';
+$_MODULE['<{pleasewait}prestashop>pleasewait_254f642527b45bc260048e30704edb39'] = 'Configuration';
+$_MODULE['<{pleasewait}prestashop>pleasewait_c9cc8cce247e49bae79f15173ce97354'] = 'Sauvegarder';
+$_MODULE['<{pleasewait}prestashop>pleasewait_93cba07454f06a4a960172bbd6e2a435'] = 'Oui';
+$_MODULE['<{pleasewait}prestashop>pleasewait_bafd7322c6e97d25b6299b5d6fe8920b'] = 'Non';
+$_MODULE['<{pleasewait}prestashop>pleasewait_3cb570a281fdf81f60f32cdfed505ff6'] = 'est requis';
+$_MODULE['<{pleasewait}prestashop>pleasewait_0a5fa53f3f20f67f98bd6c3b16df059d'] = 'est requis';
+$_MODULE['<{pleasewait}prestashop>pleasewait_a2dfd34e4a55c47d43aedebb87a7ed58'] = 'Ne peut pas dépasser 100Mb';
+$_MODULE['<{pleasewait}prestashop>pleasewait_998b344cff693ad388a14ba89b1523c7'] = 'est invalide';
+$_MODULE['<{pleasewait}prestashop>pleasewait_ebba06a4de65f4f86cb2cac1341df1e2'] = 'La taille des icônes n\'est pas valide';
+$_MODULE['<{pleasewait}prestashop>pleasewait_d0911abf98053fbc867f130b0133b92b'] = 'La couleur de l\'icône n\'est pas valide';
+$_MODULE['<{pleasewait}prestashop>pleasewait_1e56a0410096059645a945fb33fdea29'] = 'La couleur du texte n\'est pas valide';
+$_MODULE['<{pleasewait}prestashop>pleasewait_2dfae56804a20b70fbf2bac261ae7ec0'] = 'La couleur d\'arrière-plan n\'est pas valide';
+$_MODULE['<{pleasewait}prestashop>pleasewait_5a0dc9af08b6d6ba3236af0b14257015'] = 'L\'opacité du fond n\'est pas valide';
+$_MODULE['<{pleasewait}prestashop>pleasewait_ca9d4e7efbc4c150afeb389ef5e62121'] = 'existe déjà. Essayez de renommer le fichier puis reupload';
+$_MODULE['<{pleasewait}prestashop>pleasewait_dc75b70fb639a9b40637265045bebf79'] = 'Impossible de télécharger le fichier';
+$_MODULE['<{pleasewait}prestashop>pleasewait_7cc92687130ea12abb80556681538001'] = 'Une erreur s\'est produite pendant le processus de téléchargement d\'image.';

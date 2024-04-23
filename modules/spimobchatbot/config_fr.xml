@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>spimobchatbot</name>
+	<displayName><![CDATA[ChatBot.tn Plugin]]></displayName>
+	<version><![CDATA[1.2.1]]></version>
+	<description><![CDATA[ChatBot.tn is the easiest way to design, build and publish your chatbot for your website and your Facebook Messenger in minutes and use the live chat]]></description>
+	<author><![CDATA[Spimob.io]]></author>
+	<tab><![CDATA[advertising_marketing]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall ChatBot.tn Plugin? You will lose all the data related to this module.]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

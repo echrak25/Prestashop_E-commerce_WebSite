@@ -1,0 +1,27 @@
+<?php //PrestaShopBundle%255CController%255CAdmin%255CSell%255CCustomer%255CCustomerController%2523indexAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['PrestaShopBundle\\Security\\Annotation\\AdminSecurity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('PrestaShopBundle\\Security\\Annotation\\AdminSecurity')),
+    ],
+    null,
+    [
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security' => [
+            'expression' => [
+                'is_granted(\'read\', request.get(\'_legacy_controller\'))',
+            ],
+            'message' => [
+                'You do not have permission to view this.',
+            ],
+        ],
+        'PrestaShopBundle\\Security\\Annotation\\AdminSecurity' => [
+            'redirectRoute' => [
+                'admin_customers_index',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

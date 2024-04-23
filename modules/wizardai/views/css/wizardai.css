@@ -1,0 +1,134 @@
+.btn-wizardai {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 42px !important;
+    color: #363a41!important;
+    background-color: transparent!important;
+    background-image: none!important;
+    border-color: #bbcdd2!important;
+}
+
+.btn-wizardai:focus, .btn-wizardai:hover {
+    border-color: #bbcdd2!important;
+}
+
+.btn-wizardai:hover {
+    color: #25b9d7!important;
+    background-color: #f4fcfd!important;
+    border-color: #f4fcfd!important;
+}
+
+.panel-footer .btn-wizardai, .translations-wrapper .btn-wizardai {
+    margin: 0px;
+    height: 39px!important;
+}
+
+.translations-wrapper .btn-wizardai.pull-right {
+    float: right!important;
+}
+
+.wizardai-loading {
+    display: inline-block;
+    width: 55px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.wizardai-loading div {
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #6c868e;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.wizardai-loading div:nth-child(1) {
+    left: 8px;
+    animation: wizardai-loading1 0.6s infinite;
+}
+
+.wizardai-loading div:nth-child(2) {
+    left: 8px;
+    animation: wizardai-loading2 0.6s infinite;
+}
+
+.wizardai-loading div:nth-child(3) {
+    left: 32px;
+    animation: wizardai-loading2 0.6s infinite;
+}
+
+.wizardai-loading div:nth-child(4) {
+    left: 56px;
+    animation: wizardai-loading3 0.6s infinite;
+}
+
+.adminproducts .product-page .summary-description-container {
+    overflow: visible;
+}
+
+.btn-wizardai.dropdown-toggle {
+    height: 42px !important;
+    width: 42px !important;
+}
+
+.btn-wizardai.dropdown-toggle:not(.dropdown-toggle-split)::after {
+    margin-left: 0px!important;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.btn-wizardai {
+    margin-left: 0px;
+}
+
+.btn-group-wizardai li a {
+    /* link style reset */
+    color: #000;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.btn-group-wizardai li a:hover {
+    background-color: #25b9d7;
+    color: #fff;
+}
+
+
+.btn-group-wizardai.show>.btn-default.dropdown-toggle {
+    background-color: transparent;
+    border-color: #25b9d7;
+}
+
+@keyframes wizardai-loading1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes wizardai-loading3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes wizardai-loading2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}

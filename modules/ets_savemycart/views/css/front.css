@@ -1,0 +1,538 @@
+
+.ets_sc_sendmail.active {
+    display: block;
+}
+.ets_sc_sendmail {
+    display: none;
+}
+.savecart_bottom_page {
+    margin-top: 10px;
+}
+.ets_shoppingcart_email h3.title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.ets_shoppingcart_email h3.title {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 5px 20px 20px;
+    text-transform: none!important;
+}
+.ets_sc_shopping_cart {
+    list-style: none;
+}
+p.sc_pls_login {
+    color: #d30000;
+}
+.ets_shoppingcart_email .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+button#ets_sc_btn_share.pull-right {
+    float: right;
+}
+.ets_shoppingcart_email .form-group label {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 15px;
+    min-width: 150px;
+}
+form#ets_shoppingcart_email_form,
+#ets_shoppingcart_email_form .form-group,
+#ets_shoppingcart_email_form .form-group label {
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+.pull-right {
+    float: right;
+}
+form#ets_shoppingcart_email_form .panel-footer {
+    text-align: left;
+}
+.ets_shoppingcart_email .panel-footer {
+    background: transparent;
+    border: none;
+    text-align: right;
+}
+.ets_svg_icon.ets_svg_fill_gray svg {
+    fill: #777;
+}
+button.btn.btn-primary[name="submitSend"] {
+    margin-top: 7px;
+}
+.ets_sc_sendmail_form form#ets_shoppingcart_email_form .panel-footer,
+.ets_sc_overload2 form#ets_shoppingcart_email_form .panel-footer{
+    text-align: right;
+}
+.ets_aban_action a:hover .ets_svg_icon.ets_svg_fill_hover_blue svg {
+    fill: #fff;
+}
+.ets_aban_action a:active:focus:not(:hover),
+.ets_aban_action a:focus:not(:hover){
+    background: none;
+}
+.ets_aban_action a:hover:before {
+    content: attr(data-tooltip);
+    background: #333;
+    position: absolute;
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: none;
+    padding: 2px 5px;
+    min-width: 55px;
+    line-height: 1.7;
+    color: #fff;
+    left: 50%;
+    bottom: 100%;
+    pointer-events: none;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.ets_aban_action a:hover:after {
+    content: "";
+    border-top: 5px solid #333333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 5px;
+    left: 50%;
+    pointer-events: none;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.ets_shoppingcart_email > form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.ets_sc_overload,
+.ets_sc_overload2{
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    bottom: 0;
+    overflow: auto;
+    display: none;
+}
+.ets_sc_shopping_cart_overload.ets_sc_overload.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ets_sc_overload .ets_sc_content,
+.ets_sc_overload2 .ets_sc_content,
+.ets_sc_overload .ets_sc_shopping_cart,
+.ets_sc_overload2 .ets_sc_shopping_cart {
+    width: 800px;
+    text-align: center;
+    background: #fff;
+    margin: 0 auto;
+    max-width: 94%;
+    position: relative;
+    padding: 15px 15px 20px;
+}
+.ets_sc_form_save_cart .front_login.panel .module_error.alert.alert-danger {
+    margin-left: 0;
+    margin-right: 0;
+}
+.ets_sc_form_save_cart .front_login.panel .bootstrap {
+    margin: 0;
+    padding: 0;
+}
+.ets_sc_overload .ets_sc_content .panel-footer,
+.ets_sc_overload2 .ets_sc_content .panel-footer
+{
+    text-align: center;
+}
+.ets_sc_overload .ets_sc_content .panel-footer a.btn,
+.ets_sc_overload2 .ets_sc_content .panel-footer a.btn
+{
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+.ets_sc_overload.active,
+.ets_sc_overload2.active
+{
+    display: block;
+}
+.ets_sc_overload .table,
+.ets_sc_overload2 .table
+{
+    display: table;
+    height: 100%;
+}
+.ets_sc_overload .table-cell,
+.ets_sc_overload2 .table-cell
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.ets_shoppingcart_email {
+    background: #fff;
+    padding: 15px;
+    margin: 30px 0;
+    box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 2px;
+    position: relative;
+}
+.page-my-account a#shopping-cart-link {
+    width: 100%;
+    padding: 0 !important;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+.ets_shoppingcart_email button.btn.btn-primary {
+    position: relative;
+    outline: none;
+}
+.ets_shoppingcart_email .panel-footer button.btn.btn-primary.active:before,
+button#ets_sc_cart_save.active:before,
+button#ets_sc_btn_share.active:before,
+.ets_sc_overload .btn.active:before,
+.ets_sc_overload2 .btn.active:before,
+.ets_sc_view_shopping_cart.active i:before,
+.ets_sc_shopping_cart .btn.btn-primary.active:before,
+button[name="submitSend"].active:before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid transparent!important;
+    border-right: 2px solid transparent!important;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+    top: 50%;
+    animation: loading 0.5s infinite linear;
+    -webkit-animation: loading 0.5s infinite linear;
+}
+.ets_shoppingcart_email button.btn.btn-primary.active,
+button#ets_sc_cart_save.active,
+button[name="submitSend"].active,
+.ets_sc_overload .btn.active,
+.ets_sc_overload2 .btn.active,
+button#ets_sc_btn_share.active,
+.ets_sc_shopping_cart .btn.btn-primary.active {
+    color: transparent!important;
+}
+.ets_sc_view_shopping_cart.active i:before{
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+    margin-left: -7px;
+}
+.ets_sc_view_shopping_cart.active:hover i:before{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.ets_sc_view_shopping_cart.active i svg{
+    opacity: 0;
+}
+.ets_shoppingcart_email label.required:before{
+    display: none!important;
+}
+.ets_shoppingcart_email label.required:after {
+    content: "*";
+    color: red;
+    display: inline-block;
+    margin-left: 3px;
+}
+.ets_sc_shopping_cart .form-group {
+    text-align: left;
+}
+.ets_sc_sendmail_result h3.title {
+    margin-bottom: 25px;
+    padding-top: 5px;
+}
+.ets_sc_form_save_cart .form-group.row-padding-top {
+    margin-bottom: 0;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.front.front_login h4,
+.ets_sc_sendmail_form h3.title {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 17px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+.ets_aban_listsavecart th.size_1 {
+    width: 12%;
+}
+.ets_aban_listsavecart td.size_2 {
+    width: 15%;
+}
+.ets_aban_listsavecart td.size_2.sc_product_name {
+    width: 20%;
+}
+.ets_aban_listsavecart td.size_2.sc_price {
+    width: 17%;
+}
+.front_login a.ets_sc_checkout.btn.btn-primary {
+    float: right;
+}
+.ets_sc_form_save_cart button#submit_cart i {
+    display: none;
+}
+.ets_aban_action a {
+    display: block;
+    position: relative;
+}
+.ets_aban_action a:not(:hover) {
+    color: #666;
+}
+.ets_aban_action a i svg {
+    width: 14px;
+    height: 14px;
+}
+.ets_aban_action.sc_action a i {
+    margin-right: auto;
+    line-height: 24px;
+    display: flex!important;
+    align-items: center;
+    height: 23px;
+    justify-content: center;
+}
+.shopping-cart-list .table-bordered, .shopping-cart-list .table-bordered td, .shopping-cart-list .table-bordered th {
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+.ets_aban_listsavecart table.table tbody tr td,
+.ets_aban_listsavecart table.table tbody tr th {
+    background: #fff;
+}
+.text-center {
+    text-align: center;
+}
+.ets_aban_action a {
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    padding: 0;
+    border-radius: 3px;
+    border: 1px solid #cccccc!important;
+    outline: none;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ets_aban_action a:not(:hover) {
+    background: transparent;
+}
+.ets_sc_products li {
+    display: inline-block;
+    margin: 2px;
+}
+#order-products a.order-products-thumb {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+}
+
+ul.ets_sc_products {
+    margin-bottom: 0;
+}
+h4.savecart_titlebox {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    margin-top: 0;
+}
+.ets_sc_container {
+    background: #fff;
+    padding: 20px;
+    width: 94%;
+    position: relative;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+a.order-products-thumb span.order-products-thumb {
+    display: inline-block;
+}
+span.order-products-name {
+    display: inline-block;
+}
+span.order-products-attribute {
+    color: #999;
+    font-size: 90%;
+}
+.order-products-name strong {
+    margin-bottom: 7px;
+    display: block;
+}
+.ets_sc_wrapper table#order-products td {
+    align-items: center;
+    vertical-align: middle;
+}
+.ets_sc_overload .btn,
+.ets_sc_overload2 .btn,
+#ets_sc_btn_share {
+    outline: none!important;
+    position: relative;
+}
+.ets_sc_close:before, .ets_sc_close:after {
+    content: "";
+    width: 18px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: -1px;
+    background: #aaa;
+    transform: rotate(45deg);
+}
+.ets_sc_overload label.required:before,
+.ets_sc_overload2 label.required:before
+{
+    display: none!important;
+}
+.ets_sc_overload label.required:after,
+.ets_sc_overload2 label.required:after
+{
+    content: "*";
+    color: red;
+    margin-left: 3px;
+}
+.ets_sc_close:hover::before, .ets_sc_close:hover:after {
+    background-color: #666;
+}
+.ets_sc_close:after,
+.ets_sc_container .ets_sc_close:after {
+    transform: rotate(-45deg);
+}
+button#ets_sc_cart_save,
+.ets_sc_shopping_cart button, 
+.ets_sc_shopping_cart a {
+    outline: none!important;
+    position: relative;
+}
+.order-products-thumb img {
+    margin-right: 7px;
+    width: 80px;
+    display: inline-block;
+    min-width: 80px;
+}
+.ets_sc_close {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    cursor: pointer;
+    transform: none!important;
+}
+.ets_sc_form_save_cart .alert.alert-info {
+    text-align: left;
+}
+.ets_sc_form_save_cart ul {
+    margin-bottom: 0;
+}
+.ets_sc_form_save_cart .alert.alert-danger {
+    text-align: left;
+}
+.ets_aban_listsavecart .ets_sc_products img {
+    width: 80px;
+    display: inline-block;
+}
+.ets_sc_display_shopping_cart_overload.ets_sc_popup {
+    font-size: 15px;
+}
+.front.front_login.panel {
+    margin-bottom: 0;
+    box-shadow: none;
+}
+ul.myaccount-link-list #shopping-cart-link i.material-icons.shopping-cart {
+    font-size: 0;
+}
+
+ul.myaccount-link-list #shopping-cart-link i.material-icons.shopping-cart:before {
+    content: "\f291";
+    font-family: Fontawesome, sans-serif;
+    font-style: normal;
+    line-height: 1;
+    font-size: 2rem;
+    margin-bottom: 0;
+    display: block;
+    height: 0;
+}
+.ets_aban_listsavecart .ets_aban_action .btn-default {
+    background: transparent;
+}
+.ets_aban_listsavecart table.table td, .ets_aban_listsavecart table.table th {
+    vertical-align: middle;
+}
+.ets_sc_display_shopping_cart_overload .box {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.alert.alert-success.ets_message_alert {
+    padding: 1rem 0 0 0 !important;
+}
+#submit_share_card:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+

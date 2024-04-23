@@ -1,0 +1,54 @@
+services:
+  _defaults:
+    public: true
+
+  ##############
+  # Your Module
+
+  wizardai.module:
+    class: wizardai
+    factory: ['Module', 'getInstanceByName']
+    arguments:
+      - 'wizardai'
+
+  wizardai.context:
+    class: Context
+    factory: ['Context', 'getContext']
+
+  #####################
+  # PrestaShop Account
+
+  wizardai.ps_accounts_installer:
+    class: 'PrestaShop\PsAccountsInstaller\Installer\Installer'
+    arguments:
+      - '5.0'
+
+  wizardai.ps_accounts_facade:
+    class: 'PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts'
+    arguments:
+      - '@wizardai.ps_accounts_installer'
+
+  #####################
+  # PrestaShop Billing
+
+  wizardai.ps_billings_context_wrapper:
+    class: 'PrestaShopCorp\Billing\Wrappers\BillingContextWrapper'
+    arguments:
+      - '@wizardai.ps_accounts_facade'
+      - '@wizardai.context'
+      - false # sb mode
+
+  wizardai.ps_billings_facade:
+    class: 'PrestaShopCorp\Billing\Presenter\BillingPresenter'
+    public: true
+    arguments:
+      - '@wizardai.ps_billings_context_wrapper'
+      - '@wizardai.module'
+
+  # Remove this if you do not need BillingService
+  wizardai.ps_billings_service:
+    class: 'PrestaShopCorp\Billing\Services\BillingService'
+    public: true
+    arguments:
+      - '@wizardai.ps_billings_context_wrapper'
+      - '@wizardai.module'

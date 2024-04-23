@@ -1,0 +1,32 @@
+.mls_add_slide.btn.btn-default:before,
+.mls_play_slider:before,
+.msl_screen_type > div:first-child:before,
+.msl_screen_type > div:nth-child(2):before,
+.msl_screen_type > div:last-child:before,
+.mls_change_mode.ltr:before,
+.mls_change_mode.rtl:before,
+.mls_slide_delete:before,
+.mls_layer_duplicate:before, 
+.mls_slide_duplicated:before,
+.mls_slide_edit:before,
+.right-block h2:before,
+.mls_add_layer:before,
+.mls_layer_delete:before,
+.mls_layer_edit:before,
+.ets_multilayerslider_wrapper i:not(.process-icon-save):before {
+  content: attr(data-title)!important;
+  font-family: Material Icons;
+  font-size: 18px;
+  vertical-align: -4px;
+}
+
+.mls_export_button i.fa-exchange:before,
+.mls_add_slide:before {
+    font-size: 18px;
+    float: left;
+    line-height: 18px;
+    
+}
+.mls_import_slider_submit .mls_import_slider {
+    padding-left: 28px;
+}

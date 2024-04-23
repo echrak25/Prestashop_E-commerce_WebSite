@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>dashactivity</name>
+    <displayName><![CDATA[Tableau de bord de l&#039;activit&eacute;]]></displayName>
+    <version><![CDATA[2.1.0]]></version>
+    <description><![CDATA[D&eacute;couvrez tout ce qui se passe sur votre boutique en ligne en un clin d&rsquo;&oelig;il gr&acirc;ce &agrave; une liste de KPI dans votre tableau de bord.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>1</need_instance>
+</module>

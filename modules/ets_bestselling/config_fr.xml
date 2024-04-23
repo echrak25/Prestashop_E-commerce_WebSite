@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ets_bestselling</name>
+    <displayName><![CDATA[Best Selling Products]]></displayName>
+    <version><![CDATA[1.0.2]]></version>
+    <description><![CDATA[Add a block displaying your store`s top-selling products on various positions]]></description>
+    <author><![CDATA[ETS-Soft]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'type' => 'prestashop-module',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => 'c05cb67119660d30391dbba0c9b315c8e2ed2572',
+        'name' => 'smartsupp/live-chat',
+        'dev' => true,
+    ),
+    'versions' => array(
+        'smartsupp/chat-code-generator' => array(
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../smartsupp/chat-code-generator',
+            'aliases' => array(),
+            'reference' => '1f63b44aeb90a1cd9e37b260a35b0ccb3377feea',
+            'dev_requirement' => false,
+        ),
+        'smartsupp/live-chat' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'prestashop-module',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => 'c05cb67119660d30391dbba0c9b315c8e2ed2572',
+            'dev_requirement' => false,
+        ),
+        'smartsupp/php-partner-client' => array(
+            'pretty_version' => '1.1',
+            'version' => '1.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../smartsupp/php-partner-client',
+            'aliases' => array(),
+            'reference' => 'caa587a89ae551f1356f083baf29d31567468020',
+            'dev_requirement' => false,
+        ),
+    ),
+);

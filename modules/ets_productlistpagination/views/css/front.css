@@ -1,0 +1,100 @@
+.ets_ets_plp_faceted_overlay {
+  display: block;
+  height: auto;
+  position: relative;
+  width: auto;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+.ets_ets_plp_faceted_overlay .overlay__inner {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ets_ets_plp_faceted_overlay .spinner {
+  animation: 1s linear 0s normal none infinite running spin;
+  border-color: #999 transparent;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+.ets_plp_pagination a,
+.ets_plp_pagination .btn{
+  outline: none!important;
+  box-shadow: none!important;
+  text-decoration: none!important;
+}
+.ets_plp_pagination a.load_more {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  color: #333;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+#js-product-list .product {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 33.33%;
+}
+.ets_plp_pagination {
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+.ets_plp_pagination .pagination .page-list {
+  background: transparent;
+}
+.ets_plp_pagination .pagination .page-list a {
+  font-size: inherit;
+  min-width: 34px;
+  display: flex;
+  line-height: 34px;
+  padding: 0;
+  letter-spacing: 0;
+  background: #eee;
+  font-weight: normal;
+  outline: none!important;
+  box-shadow: none!important;
+  justify-content: center;
+  align-items: center;
+}
+.ets_plp_pagination .pagination .page-list li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+.ets_plp_pagination .pagination .page-list a.next,.ets_plp_pagination .pagination .page-list a.previous {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ets_plp_pagination .pagination .page-list li.current a {
+  background: #24b9d7;
+  color: #fff;
+}
+.ets_plp_pagination .pagination .page-list li:not(.current) a:hover {
+  background: #ddd;
+}
+.ets_plp_pagination .pagination .col-md-4, .ets_plp_pagination .pagination .col-md-6 {
+  width: 100%;
+  margin: 0;
+  float: none;
+  padding: 0;
+}
+.ets_plp_pagination .pagination * {
+  box-shadow: none!important;
+  outline: none!important;
+}
+
+
+
+

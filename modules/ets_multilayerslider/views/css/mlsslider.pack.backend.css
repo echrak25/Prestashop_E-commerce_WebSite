@@ -1,0 +1,115 @@
+.mls_slider{
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.mls_slides_front
+{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.mls_slides_front > li {
+  float: left;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute !important;
+  top: 0;
+  transition: opacity 1s ease 0s;
+  visibility: hidden;
+  width: 100%;
+}
+
+.msl_layer_front{
+    position: absolute;
+    display: none;
+}
+.mls_loading_icon{
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.mls_pagination {
+  bottom: 10px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) scale(1.5);
+  -webkit-transform: translateX(-50%) scale(1.5);
+  visibility: visible;
+  z-index: 10;
+}
+.mls_nav > div.mls_prev:before {
+  content: "\f104";
+  display: block;
+  float: left;
+  font-family: FontAwesome;
+  font-size: 30px;
+  line-height: 20px;
+  min-width: 20px;
+  text-align: center;
+}
+.mls_nav > div.mls_next:before {
+  content: "\f105";
+  display: block;
+  float: left;
+  font-family: FontAwesome;
+  font-size: 30px;
+  line-height: 20px;
+  min-width: 20px;
+  text-align: center;
+}
+.mls_nav > div {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 0;
+  opacity: 0;
+  padding: 15px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  visibility: hidden;
+}
+.mls_pag_button {
+  background: #fff none repeat scroll 0 0;
+  cursor: pointer;
+  float: left;
+  margin: 3px;
+  padding: 3px 10px;
+}
+
+.mls_slide_front.active {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.msl_layer_front.active{
+    display: block;
+}
+.mls_pag_button.active{
+    background: #000;
+    color: #fff;
+}
+.ets_multilayerslider:hover .mls_nav > div{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%) translateY(-50%);
+    -webkit-transform: translateX(0%) translateY(-50%);
+}
+.mls_nav {
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.mls_prev {
+  float: left;
+}
+.mls_next {
+  float: right;
+}

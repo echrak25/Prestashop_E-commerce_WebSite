@@ -1,0 +1,8 @@
+{% extends '@!PrestaShop/Admin/Common/Grid/grid.html.twig' %}
+{% block grid_table_row %}
+  <div class="row">
+    <div class="col-sm">
+      {{ include('@PrestaShop/Admin/Common/Grid/Blocks/table_customer.html.twig', {'grid': grid}) }}
+    </div>
+  </div>
+{% endblock %}

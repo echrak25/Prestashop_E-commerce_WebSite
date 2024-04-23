@@ -1,0 +1,38 @@
+{
+    "name": "gekkode/wizardai",
+    "config": {
+        "preferred-install": "dist",
+        "optimize-autoloader": true,
+        "prepend-autoloader": false,
+        "platform": {
+            "php": "7.1"
+        }
+    },
+    "authors": [
+        {
+            "name": "Damien Flandrin",
+            "email": "contact@gekkode.com"
+        },
+        {
+            "name": "Gekkode Team"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "prestashop/prestashop-accounts-installer": "^1.0.1",
+        "prestashop/module-lib-service-container": "^1.4",
+        "prestashopcorp/module-lib-billing": "^3",
+        "prestashop/module-lib-mbo-installer": "^0.1"
+    },
+    "autoload": {
+        "classmap": [
+            "wizardai.php"
+        ],
+        "psr-4": {
+            "WizardAI\\": "src/"
+        },
+        "type": "prestashop-module"
+    },
+    "author": "PrestaShop",
+    "license": "AFL-3.0"
+}

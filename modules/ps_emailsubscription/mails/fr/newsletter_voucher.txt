@@ -1,0 +1,13 @@
+ 
+
+{shop_url}
+
+Bonjour,
+
+S'abonner à la newsletter
+
+Merci de vous êtes abonné à notre newsletter. Nous avons le plaisir de vous offrir le bon de réduction suivant : {discount}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop-project.org/)

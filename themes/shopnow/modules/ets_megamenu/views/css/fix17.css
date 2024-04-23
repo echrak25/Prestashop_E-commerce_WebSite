@@ -1,0 +1,25 @@
+body{
+
+}
+.ets_mm_megamenu.hook-default {
+  clear: none;
+  float: left;
+  padding: 0;
+  margin-top: 0;
+}
+.layout_layout5.hook-default .ets_mm_megamenu_content {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: medium none;
+}
+.layout_layout5.hook-default .mm_menus_ul .mm_menus_li:not(:nth-child(2)):after {
+  display: none;
+}
+.layout_layout5.hook-default .mm_menus_li > a {
+  padding: 15px 20px;
+}
+
+@media (max-width: 767px){
+    .layout_layout5.hook-default .mm_menus_li > a {
+      padding: 10px 20px;
+    }
+}

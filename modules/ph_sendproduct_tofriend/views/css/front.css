@@ -1,0 +1,281 @@
+/**
+ * Copyright ETS Software Technology Co., Ltd
+ *
+ * NOTICE OF LICENSE
+ *
+ * This file is not open source! Each license that you purchased is only available for 1 website only.
+ * If you want to use this file on more websites (or projects), you need to purchase additional licenses.
+ * You are not allowed to redistribute, resell, lease, license, sub-license or offer our resources to any third party.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future.
+ *
+ * @author ETS Software Technology Co., Ltd
+ * @copyright  ETS Software Technology Co., Ltd
+ * @license    Valid for 1 website (or project) for each purchase of license
+*/
+.ets-sptf-wrapper .hidden {
+    display: none;
+}
+.ets-sptf-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+.ets-sptf-form.ets-sptf-modal {
+    background-color: #FFFFFF;
+    border-radius: 0;
+    float: left;
+    left: 50%;
+    position: relative;
+    top: 8%;
+    margin-bottom: 5%;
+    transform: translate3d(-50%, 0%, 0px);
+    -webkit-transform: translate3d(-50%, 0%, 0px);
+    width: 800px;
+    max-width: 80%;
+    transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+}
+.sptf_modal_close {
+    background-color: transparent;
+    color: #e3e3e1;
+    cursor: pointer;
+    font-size: 0;
+    height: 26px;
+    line-height: 24px;
+    position: absolute;
+    right: 9px;
+    top: 6px;
+    width: 26px;
+    z-index: 1;
+}
+.sptf_modal_close:hover {
+    color: #d1d1d1;
+}
+.sptf_modal_close::before {
+    content: "x";
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+}
+.sptf-form-container {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+}
+.sptf-form-heading span {
+    padding-left: 10px;
+}
+.sptf-form-heading {
+    color: black;
+    display: flex;
+    align-items: center;
+    font-family: Ubuntu Condensed,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    height: 2.2em;
+    font-size: 20px;
+    line-height: 2.2em;
+    margin: -20px -20px 15px;
+    padding: 0 0 0 5px;
+    border-radius: 3px;
+    padding-left: 50px;
+    min-height: 55px;
+}
+.sptf-product-info {
+    float: none;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.sptf-product-info .product-image {
+    width: 120px;
+}
+.sptf-input-container,
+.sptf-submit-wrapper {
+    float: none;
+}
+.sptf-input-row {
+    display: flex;
+    width: 100%;
+}
+.sptf-customer-info label ,
+.sptf-email-form label,
+.sptf-product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sptf-email-form span, .sptf-email-input input {
+    width: 100%;
+}
+.sptf-form-control.sptf-submit {
+    position: relative;
+    left: 85%;
+    min-width: 100px;
+    min-height: 40px;
+    border: 1px solid white;
+    background: #2fb5d2;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 6px;
+}
+.sptf-form-control.sptf-submit:focus {
+    outline: none;
+}
+.sptf-form-control.sptf-submit:hover,#sptf-open-popup:hover {
+    background-color: #2592a9;
+}
+.sptf-form-detail input:focus,
+.sptf-form-control.sptf-textarea.sptf-validates-as-required.form-control:focus {
+    outline: none;
+}
+#sptf-open-popup {
+    border: 1px solid transparent;
+    background: #2fb5d2;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    top: 10px;
+}
+.sptf-product-page input:focus {
+    outline: none;
+    border: 1px solid #66afe9;
+}
+.sptf-product-page input {
+    outline: none;
+    border: 1px solid #7a7a7a;
+}
+.sptf-product-page input {
+    padding: 5px;
+}
+.sptf-form-detail .input-label:not(.sptf-message-label)::after {
+    content: '*';
+    color: red;
+}
+.sptf-submit-wrapper .alert.alert-success.ets_message_alert,
+.sptf-submit-wrapper .alert.alert-warning.ets_message_alert {
+    position: relative;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    margin: 10px 0;
+    max-height: 40px;
+}
+.col-xs-12.mb-1.sptf-email-input {
+    padding-left: 0;
+}
+.sptf-form-detail.sptf-input-container.col-md-12 {
+    display: flex;
+    flex-direction: column;
+}
+.sptf-not-valid-tip {
+    display: block;
+    font-size: 12px;
+    color: #f00;
+    text-align: left;
+}
+
+.sptf-form-control.sptf-submit.load::after {
+    position: absolute;
+    content: "";
+    left: 48%;
+    margin-left: -7px;
+    margin-top: -7px;
+    top: 45%;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+    border-top: 3px solid transparent;
+    animation: load-animate infinite linear 1s;
+}
+.sptf-form-control.sptf-submit.load span {
+    visibility: hidden;
+}
+@media (max-width: 767px) {
+    .sptf-form-container {
+        padding: 0px;
+    }
+    .sptf-form-heading {
+        font-size: 15px;
+        margin: auto;
+    }
+    .ets-sptf-form.ets-sptf-modal {
+        min-width: 90%;
+    }
+    .sptf-input-row {
+        flex-direction: column;
+    }
+    .sptf-submit-wrapper .alert.alert-success.ets_message_alert, .sptf-submit-wrapper .alert.alert-warning.ets_message_alert {
+        max-height: 60px;
+    }
+
+    element.style {
+    }
+    .sptf-form-control.sptf-submit:hover, #sptf-open-popup:hover {
+        background-color: #2592a9;
+    }
+    .sptf-form-control.sptf-submit {
+        left: 65%;
+    }
+    .sptf-non-modal-input::-webkit-input-placeholder,
+    .sptf-non-modal-input::-moz-placeholder,
+    .sptf-non-modal-input:-moz-placeholder{
+        font-size: 13px;
+    }
+    .sptf-non-modal-input {
+        display: none;
+    }
+}
+.sptf-non-modal-input {
+    display: none;
+}
+.form-control {
+    background: transparent;
+}
+.col-xs-12.col-sm-12.sptf-submit-wrapper {
+    padding-right: 8px !important;
+}
+.modal.quickview .sptf-form-control.sptf-submit {
+    left: 0;
+}
+.modal.quickview a#sptf-open-popup {
+    display: none;
+    margin: 20px 40px;
+    margin-bottom: 0;
+}
+.modal.quickview .ets-sptf-modal-overlay {
+    background-color: transparent;
+    overflow: hidden;
+}
+.sptf-product-page {
+    margin-top: 10px;
+}
+@keyframes load-animate{
+    0%
+    {transform: rotate(0deg);}
+    50%
+    {transform: rotate(180deg);
+    opacity: .35;}
+    100%
+    {transform: rotate(360deg);}
+}

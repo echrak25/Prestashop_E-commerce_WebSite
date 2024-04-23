@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ph_scrolltotop</name>
+    <displayName><![CDATA[Amazing Scroll to Top]]></displayName>
+    <version><![CDATA[1.0.4]]></version>
+    <description><![CDATA[Create and customize your scroll to top button.]]></description>
+    <author><![CDATA[ETS-Soft]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

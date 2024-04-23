@@ -1,0 +1,452 @@
+input[type="text"]:focus + .error_link{
+    opacity: 0!important;
+}
+.ph-list-socials li svg, .ph_social_list svg {
+    height: 30px;
+    width: 30px;
+    float: left;
+    fill: inherit;
+}
+.social_tab.active{
+    color:#2eacce;
+}
+.social_tab_content {
+    display:none;
+}
+.social_tab_content.active {
+    display:block;
+}
+.ph-list-socials li.item-social {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+form#configuration_form .panel {
+    background: transparent!important;
+    border: none!important;
+    padding: 0 5px!important;
+}
+span.tooltip_title {
+    display: none;
+}
+.bootstrap .panel-footer {
+    margin: 10px 0 0!important;
+}
+.ph-list-socials-form{
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+ul.ph-list-socials {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+ul.ph_social_list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+
+.ph_social_list li.ph_social_item {
+    margin-right: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.social_tab_content_style_right h3.ph_social_preview_title {
+    margin: 0!important;
+}
+.ph-list-socials li.item-social input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    vertical-align: -4px;
+    border: 1px solid #ccc;
+}
+.ph-list-socials li.item-social i {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+ul.ph_social_link_tabs_configs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.error_link {
+    color: red;
+    margin-top: 3px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    font-size: 11px;
+}
+
+.social_tab.active:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    background: #2eacce;
+}
+.panel h4.title, .panel .ph_social_preview_title {
+    font-family: 'Open Sans';
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 14px;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+ul.ph_social_link_tabs_configs li.social_tab {
+    padding: 7px 15px;
+    position: relative;
+}
+.social_tab_content_style_center_content,
+.social_tab_content_style_right .ph_social_panel {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 482px;
+    position: sticky!important;
+    top: 150px;
+}
+.form-wrapper .row {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    width: calc(100% + 10px);
+}
+.ph-list-socials li.item-social .item-social-input {
+    width: calc(100% - 210px);
+    float: right;
+    padding-left: 15px;
+    position: relative;
+}
+.panel .panel-heading {
+    margin: 0!important;
+    display: none;
+}
+li.item-social p.error_link {
+    display: block;
+    opacity: 0;
+}
+li.item-social.error p.error_link {
+    display: block;
+    opacity:1;
+    transition: opacity 0.1s;
+    transition-delay: 0.5s;
+}
+h4.ph_social_link_title {
+    font-family: 'OPEN SANS';
+    margin-top: 20px!important;
+    display: block;
+    font-weight: 600;
+}
+@media (max-width: 1500px){
+    .ph-list-socials li.item-social {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .ph-list-socials li.item-social .item-social-input {
+        width: 100%;
+        float: right;
+        margin-left: 26px;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 767px){
+    .social_tab_content_style_center,
+    social_tab_content_style_left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/*admin and frontend */
+.ph_social_list li.ph_social_item i {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    fill: #fff;
+    border-radius: 5px;
+}
+.ph_social_list li.ph_social_item a {
+    display: block;
+    color: #fff;
+    fill: #fff;
+    text-decoration: none!important;
+}
+.button_border_rounded li.ph_social_item i {
+    border-radius: 50%;
+}
+span.ph_sc_name {
+    display: inline-block;
+    min-width: 120px;
+    font-weight: 600;
+}
+.button_type_img span.social_name {
+    display: none;
+}
+.button_border_rounded a {
+    border-radius: 5px;
+}
+.button_type_img a {
+    background-color: transparent!important;
+}
+.button_type_img i {
+    display: none!important;
+}
+.button_type_img.button_size_small img {
+    width: 24px;
+}
+.button_type_img.button_size_medium img {
+    width: 30px;
+}
+.button_type_img.button_size_large img {
+    width: 45px;
+}
+
+.button_type_name img,
+.button_type_flat_icon img {
+    display: none;
+}
+.button_type_name.button_size_small svg,
+.button_type_flat_icon.button_size_small svg {
+    width: 16px;
+    height: 16px;
+}
+.button_type_name.button_size_medium svg,
+.button_type_flat_icon.button_size_medium svg {
+    width: 20px;
+    height: 20px;
+}
+.button_type_name.button_size_large svg,
+.button_type_flat_icon.button_size_large svg {
+    width: 25px;
+    height: 25px;
+}
+.button_type_flat_icon span.social_name {
+    display: none;
+}
+.item-social i {
+    color: #fff;
+    fill: #fff;
+    padding: 3px;
+    border-radius: 4px;
+}
+.button_type_name .ph_social_item a {
+    padding-right: 15px;
+}
+.button_border_rounded li.ph_social_item a{
+    border-radius: 5px!important;
+}
+.button_type_name .ph_social_item a i {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 0;
+    margin-right: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.facebook i,
+.facebook a{
+    background-color: #4f6b9c;
+}
+.twitter i,
+.twitter a{
+    background-color: #4fc6ed;
+}
+.pinterest i,
+.pinterest a{
+    background-color: #be242a;
+}
+.email i,
+.email a{
+    background-color: #bf211e;
+}
+.whatsapp i,
+.whatsapp a{
+    background-color: #2aa625;
+}
+.linkedin i,
+.linkedin a{
+    background-color: #318cb4;
+}
+.reddit i,
+.reddit a{
+    background-color: #5b5b5b;
+}
+.tumblr i,
+.tumblr a{
+    background-color: #385368;
+}
+.delicious i,
+.delicious a{
+    background-color:#2464e7;
+}
+.digg i,
+.digg a{
+    background-color: #466ca3;
+}
+.flipboard i,
+.flipboard a{
+    background-color:#da2727;
+}
+.meneame i,
+.meneame a{
+    background-color: #f06e1c;
+}
+.facebook_messenger i,
+.facebook_messenger a{
+    background-color: #4f6b9c;
+}
+.odnoklassniki i,
+.odnoklassniki a{
+    background-color: #ee7b08;
+}
+.vk i,
+.vk a{
+    background-color: #587aa4;
+}
+.snapchat i,
+.snapchat a{
+    background-color: #f7f400;
+}
+.blogger i,
+.blogger a{
+    background-color: #dd8f28;
+}
+.mail_ru i,
+.mail_ru a{
+    background-color: #e4a744;
+}
+.livejournal i,
+.livejournal a{
+    background-color: #2da0ca;
+}
+.baidu i,
+.baidu a{
+    background-color: #2218d5;
+}
+.buffer i,
+.buffer a{
+    background-color: #0972b5;
+}
+.evernote i,
+.evernote  a{
+    background-color: #00a32c;
+}
+.google_bookmarks i,
+.google_bookmarks  a{
+    background-color: #f3b505;
+}
+.gmail i,
+.gmail a{
+    background-color: #e13129;
+}
+.instapaper i,
+.instapaper a{
+    background-color: #000000;
+}
+.line i ,
+.line a{
+    background-color: #11970b;
+}
+.pocket i,
+.pocket a{
+    background-color: #e83e53;
+}
+.qzone i,
+.qzone a{
+    background-color: #f7c800;
+}
+.diaspora i,
+.diaspora a{
+    background-color: #f69e2f;
+}
+.surfingbird i,
+.surfingbird a{
+    background-color: #30b6f7;
+}
+.refind i,
+.refind a{
+    background-color: #008bea;
+}
+.skype i,
+.skype a{
+    background-color: #00aae8;
+}
+.telegram i,
+.telegram a{
+    background-color: #1d91c2;
+}
+.threema i,
+.threema a{
+    background-color: #38dc72;
+}
+.yahoo i,
+.yahoo a{
+    background-color: #770094;
+}
+.wordpress i,
+.wordpress a{
+    background-color: #207196;
+}
+.youtube i,
+.youtube a {
+    background: #ff011d;
+}
+.instagram a,
+.instagram i {
+    background: #914ac0;
+}
+.tiktok a,
+.tiktok i {
+    background: #26ece7;
+}
+.weibo i,
+.weibo a {
+    background: #ec4134;
+}
+.vimeo i,
+.vimeo a {
+    background: #00a8e8;
+}
+.button_border_cricle .ph_social_item a, .button_border_cricle .ph_social_item a i {
+    border-radius: 50%;
+}
+
+
+.button_border_rounded.button_size_large .ph_social_item a {
+    color: #fff;
+    fill: #fff;
+    border-radius: 50%;
+}
+.panel-footer {
+  display:  none;
+}
+.bootstrap .ok .social_link {
+  border-color: green;
+}
+.bootstrap .error .social_link {
+  border-color: red;
+}
+/*end*/

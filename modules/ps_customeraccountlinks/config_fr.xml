@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_customeraccountlinks</name>
+    <displayName><![CDATA[Bloc Mon compte]]></displayName>
+    <version><![CDATA[3.2.0]]></version>
+    <description><![CDATA[Souhaitez la bienvenue à vos clients en affichant leurs informations en pied de page.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+</module>

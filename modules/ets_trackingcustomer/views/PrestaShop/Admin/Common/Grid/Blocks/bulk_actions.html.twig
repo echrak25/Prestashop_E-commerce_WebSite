@@ -1,0 +1,43 @@
+{#**
+ /**
+ * Copyright ETS Software Technology Co., Ltd
+ *
+ * NOTICE OF LICENSE
+ *
+ * This file is not open source! Each license that you purchased is only available for 1 website only.
+ * If you want to use this file on more websites (or projects), you need to purchase additional licenses.
+ * You are not allowed to redistribute, resell, lease, license, sub-license or offer our resources to any third party.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future.
+ *
+ * @author ETS Software Technology Co., Ltd
+ * @copyright  ETS Software Technology Co., Ltd
+ * @license    Valid for 1 website (or project) for each purchase of license
+ */
+ *#}
+{% include '@!PrestaShop/Admin/Common/Grid/Blocks/bulk_actions.html.twig' %}
+{% if ets_tc_list_views is defined and ets_tc_list_views is not null %}
+  <div class="d-inline-block d-inline-block dropdown dropdown-clickable mr-2 ml-2">
+    <div id="form_view_selected2">
+      <label>View</label>
+        <select name="id_view_selected2" id="id_view_selected2" >
+            {% for view in ets_tc_list_views %}
+                <option data-fields="{{view.fields}}" value="{{view.id_ets_tc_view}}"{%if view.id_ets_tc_view==ets_tc_id_view_selected%} selected="selected"{%endif%}>{{ view.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+  </div>
+{%endif%}
+{%if link_customer_manager is defined%}
+    <div class="d-inline-block">
+        <a id="desc-customer-arrange2" class="btn btn-default btn-outline-secondary ml-2" href="{{link_customer_manager}}"> {{ets_tc_custom_column_text}} </a>
+    </div>
+{%endif%}
+{%if ets_expc_link_exportcustomer_manager is defined%}
+    <div class="d-inline-block">
+        <a id="desc-customer-export" class="btn btn-default btn-outline-secondary ml-2" href="{{ets_expc_link_exportcustomer_manager}}"> {{ets_expc_custom_export_text}} </a>
+    </div>
+{%endif%}

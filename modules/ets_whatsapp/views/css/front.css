@@ -1,0 +1,43 @@
+.ets_wa_whatsapp_block img {
+  width: 50px;
+}
+.ets_wa_whatsapp_block {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.ets_wa_whatsapp_block > a {
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+.ets_wa_whatsapp_block > a img{
+    float:right;
+}
+.ets_wa_whatsapp_block.left_center > a img,.ets_wa_whatsapp_block.left_bottom > a img{
+    float:left;
+}
+.ets_wa_whatsapp_block .ets_wa_title {
+    background: #1da110;
+    color: #ffffff;
+    padding: 2px 8px;
+    display: block;
+    clear: both;
+    border-radius: 2px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.ets_wa_whatsapp_block.left_bottom,
+.ets_wa_whatsapp_block.left_center,
+.ets_wa_whatsapp_block.left_top{
+    right: auto!important;
+}
+
+
+
+
+

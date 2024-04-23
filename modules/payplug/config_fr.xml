@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>payplug</name>
+    <displayName><![CDATA[Payplug]]></displayName>
+    <version><![CDATA[4.7.2]]></version>
+    <description><![CDATA[La solution de paiement en ligne alliant simplicit&eacute; et accompagnement de premier ordre pour booster vos ventes.]]></description>
+    <author><![CDATA[Payplug]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

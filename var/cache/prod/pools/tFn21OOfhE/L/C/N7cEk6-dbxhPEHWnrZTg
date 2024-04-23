@@ -1,0 +1,3 @@
+<?php //PrestaShopBundle%255CController%255CAdmin%255CSecurityController%2523compromisedAccessAction
+
+return [PHP_INT_MAX, []];

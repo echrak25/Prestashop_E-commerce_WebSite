@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ets_productlistpagination</name>
+    <displayName><![CDATA[Product list pagination]]></displayName>
+    <version><![CDATA[1.0.2]]></version>
+    <description><![CDATA[Add pagination to the product listing page on the PrestaShop store in 3 ways: pagination, &quot;load more&quot; button, or scroll to load]]></description>
+    <author><![CDATA[ETS-Soft]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ph_sendproduct_tofriend</name>
+    <displayName><![CDATA[Send Product to Friend]]></displayName>
+    <version><![CDATA[1.0.4]]></version>
+    <description><![CDATA[Share a favorite product to your friends via email.]]></description>
+    <author><![CDATA[PrestaHero]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

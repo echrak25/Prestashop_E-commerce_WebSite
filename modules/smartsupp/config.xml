@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>smartsupp</name>
+    <displayName><![CDATA[Smartsupp Live Chat]]></displayName>
+    <version><![CDATA[2.2.0]]></version>
+    <description><![CDATA[Smartsupp combines live chat and chatbots to save your time.]]></description>
+    <author><![CDATA[Smartsupp]]></author>
+    <tab><![CDATA[advertising_marketing]]></tab>
+	<confirmUninstall><![CDATA[Opravdu chcete odinstalovat Smartsupp? Ztratíte tak všechna data uložená v modulu.]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

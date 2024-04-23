@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>dashproducts</name>
+    <displayName><![CDATA[Tableau de bord Produits]]></displayName>
+    <version><![CDATA[2.1.3]]></version>
+    <description><![CDATA[Enrichissez vos statistiques en affichant un tableau de vos derni&egrave;res commandes et un classement de vos produits.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>1</need_instance>
+</module>

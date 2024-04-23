@@ -1,0 +1,3 @@
+<?php //PrestaShopBundle%255CController%255CApi%255CStockController%2523listProductsAction
+
+return [PHP_INT_MAX, []];

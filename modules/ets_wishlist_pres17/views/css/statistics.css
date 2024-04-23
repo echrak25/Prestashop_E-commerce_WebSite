@@ -1,0 +1,22 @@
+.wishlist-stats .wishlist-tab {
+    display: none;
+}
+.wishlist-stats .wishlist-tab.active {
+  display: block;
+}
+.wishlist-stats .wishlist-stats-topbar {
+  -moz-box-align: center;
+  -moz-box-pack: justify;
+  align-items: center;
+  flex-wrap: wrap;
+  display:block;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.wishlist-stats .wishlist-stats-topbar .btn-group button:hover, .wishlist-stats .wishlist-stats-topbar .btn-group button.active {
+  background-color: #25b9d7;
+  color: #fff;
+}
+.wishlist-stats .card-header {
+  padding: 10px 5px;
+}

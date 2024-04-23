@@ -1,0 +1,37 @@
+<?php
+
+global $_MODULE;
+$_MODULE = [];
+$_MODULE['<{tidiolivechat}prestashop>tidiolivechat_a624beb0cf98a895af86bb831ebf8efd'] = 'Chatbots, LiveChat et Messenger de Tidio';
+$_MODULE['<{tidiolivechat}prestashop>tidiolivechat_921ff1d85a49c94a3815e66418e4f0e3'] = 'Chat en direct, chatbots et intégration de Messenger pour offrir un support client de qualité et augmenter vos ventes. Tidio est une plateforme de service client multifonctionnelle qui vous permet de générer activement plus de prospects et de ventes.';
+$_MODULE['<{tidiolivechat}prestashop>tidiolivechat_40fb158e8ca5d97316f18798fb107c38'] = 'Vous perdrez toutes les données relatives à ce module. Voulez-vous vraiment désinstaller %s ? Veuillez noter que votre compte Tidio et votre abonnement resteront inchangés. Pour plus d\'informations, veuillez consulter %s ou contacter l\'assistance via le chat sur notre site Web %s';
+$_MODULE['<{tidiolivechat}prestashop>index_3ec03a367c8f53e0e0f3c0de8a31ff1c'] = 'Ce champ ne peut pas être vide !';
+$_MODULE['<{tidiolivechat}prestashop>index_338fc490c74392a2fdd92debe02a7b62'] = 'L\'e-mail ne peut pas être vide !';
+$_MODULE['<{tidiolivechat}prestashop>index_bfbf84f10c2991b0bff69da2a9c1bf1a'] = 'Le mot de passe ne peut pas être vide !';
+$_MODULE['<{tidiolivechat}prestashop>index_a01d756a53385b0f3e6b01a9e29ec062'] = 'L\'adresse e-mail est invalide !';
+$_MODULE['<{tidiolivechat}prestashop>index_8524de963f07201e5c086830d370797f'] = 'Chargement...';
+$_MODULE['<{tidiolivechat}prestashop>index_2363e9bc221274a2e849c4c57669ee4b'] = 'Commencez à utiliser Tidio';
+$_MODULE['<{tidiolivechat}prestashop>index_b357b524e740bc85b9790a0712d84a30'] = 'Adresse e-mail';
+$_MODULE['<{tidiolivechat}prestashop>index_2c8c63793410cc75e4d6f77f660f509a'] = 'Par exemple';
+$_MODULE['<{tidiolivechat}prestashop>index_3f8959daca5b0b7074a6690e6c0b49ba'] = 'C\'est parti';
+$_MODULE['<{tidiolivechat}prestashop>index_7e6b764145c2242812df971711248b09'] = 'Connectez-vous à votre compte';
+$_MODULE['<{tidiolivechat}prestashop>index_dc647eb65e6711e155375218212b3964'] = 'Mot de passe';
+$_MODULE['<{tidiolivechat}prestashop>index_dd09d67831b77645183ce68ef51159aa'] = 'Intégrer avec Tidio';
+$_MODULE['<{tidiolivechat}prestashop>index_8458bad978f4fd6d6c7f8ec2ec0824b4'] = 'Mot de passe oublié ?';
+$_MODULE['<{tidiolivechat}prestashop>index_ffa47cc5a6ac64880e9056a2259adaab'] = 'Sélectionnez votre projet';
+$_MODULE['<{tidiolivechat}prestashop>index_ac7ebc8545c37650d81005e218ef2c62'] = 'Veuillez sélectionner le projet que vous souhaitez utiliser dans votre boutique.';
+$_MODULE['<{tidiolivechat}prestashop>index_6c3db4bb80d0100c933cbbd306a17d72'] = 'Certains de vos projets existants peuvent déjà être connectés à d\'autres plateformes (par exemple Shopify, WordPress) et ne peuvent pas être utilisés dans PrestaShop.';
+$_MODULE['<{tidiolivechat}prestashop>index_8f080f3e1976b09a2e92281f9f5f8703'] = 'Toutefois, si vous souhaitez utiliser un compte que vous avez déjà utilisé sur une autre plateforme, veuillez contacter notre assistance.';
+$_MODULE['<{tidiolivechat}prestashop>index_ce15237b3a11877783af25e6219d1f04'] = 'Choisissez-en un dans la liste';
+$_MODULE['<{tidiolivechat}prestashop>index_e888e548d3ff937a4c23b3cdb96fd48e'] = 'Recommencer à zéro';
+$_MODULE['<{tidiolivechat}prestashop>index_0b9bd5376ce9ac74f3b2d909a5dd6faf'] = 'Nous avons détecté que l\'adresse e-mail fournie a déjà été utilisée pour installer Tidio sur une autre plateforme (par exemple Shopify, WordPress).';
+$_MODULE['<{tidiolivechat}prestashop>index_30da333b616a5ca045e82326ca88fb0c'] = 'Afin de garantir un fonctionnement optimal, veuillez saisir une nouvelle adresse e-mail.';
+$_MODULE['<{tidiolivechat}prestashop>index_d44f2f840f65cdd832ade2aff4c52f19'] = 'Le widget Tidio Live Chat est maintenant installé et visible sur votre site Web.';
+$_MODULE['<{tidiolivechat}prestashop>index_22bc4b1c73b01dd2ef5dda8190bf5dcc'] = 'Accédez au panneau Tidio pour parler à vos visiteurs, créer et exécuter des chatbots, personnaliser le widget et bien plus encore...';
+$_MODULE['<{tidiolivechat}prestashop>index_71ff50723aa4341f877eb4c95a19f6a4'] = 'Ouvrir le panel Tidio';
+$_MODULE['<{tidiolivechat}prestashop>index_2f53031e9dce3d2846149af46d822213'] = 'Le service client, c\'est bien... Mais c\'est [1]encore mieux[/1] quand il va de pair avec une augmentation des ventes';
+$_MODULE['<{tidiolivechat}prestashop>tidiolivechat_f027e4ec6cd9f2dc2f997714918489be'] = 'Une erreur s\'est produite. Veuillez réessayer plus tard.';
+$_MODULE['<{tidiolivechat}prestashop>tidiolivechat_6497a6275d1a8b7e6403e473a5a208d3'] = 'Le processus d\'installation a été interrompu. Veuillez réessayer plus tard.';
+$_MODULE['<{tidiolivechat}prestashop>tidiolivechat_d89915cab5bc1de4ef67a5563144a2f7'] = 'Le projet est déjà intégré à une autre plateforme.';
+$_MODULE['<{tidiolivechat}prestashop>tidiolivechat_46056563483123f186ffbe0ee10d9b55'] = 'Mot de passe incorrect';
+$_MODULE['<{tidiolivechat}prestashop>tidiolivechat_7d63a91048d3156d38c9a7110183cb52'] = 'L\'e-mail fourni n\'est pas valide';

@@ -1,0 +1,324 @@
+.ets-wishlist-container-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -10px;
+}
+.ets-wishlist-container-header h1 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.ets-wishlist-add-to-new {
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  transition: all 0.2s ease-out 0s;
+}
+.ets-wishlist-add-to-new {
+  color: #2fb5d2;
+}
+.ets-wishlist-list {
+  margin-bottom: 0;
+}
+.btn-copy-url-share {
+  cursor: pointer;
+}
+.ets-wishlist-list-item-link {
+  display: inline-block;
+  float: left;
+  text-decoration: none!important;
+}
+.ets-wishlist-list-item-title {
+  color: #232323;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+.ets-wishlist-list-item-title span {
+  color: #333;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-left: 0;
+}
+.ets-wishlist-list-item-right > a, .ets-wishlist-list-item-right button {
+  fill: #777;
+  color: #777;
+}
+.ets-wishlist-list-item-right > a:hover, .ets-wishlist-list-item-right button:hover {
+  fill: #2fb5d3;
+  color: #2fb5d3;
+}
+.ets-wishlist-list-item-right > button {
+  transition: all 0.25s ease-out 0s;
+}
+.ets-wishlist-list-item button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  cursor: pointer;
+}
+.ets-wishlist-list-item .dropdown-menu.show {
+  display: block;
+}
+.ets_wl_action {
+  position: relative;
+  display: inline-block;
+}
+.ets-wishlist-list-item-right .dropdown-menu button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  padding: 5px 15px;
+  min-width: 0;
+  font-size: 13px;
+}
+.ets-wishlist-list-item-right .dropdown-menu {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+  right: 0;
+  margin-top: 10px;
+  position: absolute;
+  left: auto;
+}
+.ets-wishlist-list-item-right {
+  text-align: center;
+  width: 170px;
+}
+
+.dropdown-menu.show > button {
+  padding: 5px;
+}
+.ets-wishlist-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.ets-wishlist-products-item {
+  margin: 0;
+  padding: 15px;
+  width: 25%;
+  float: left;
+}
+.ets-wishlist-product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  max-width: 250px;
+  position: relative;
+  width: 100%;
+}
+.ets-wishlist-product-availability {
+  align-items: flex-start;
+  bottom: 17px;
+  color: #232323;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  justify-content: center;
+  left: 50%;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-bottom: 0;
+  min-width: 80%;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.ets-wishlist-product-image img{
+  max-width: 100%;
+}
+.ets-wishlist-product-title {
+  color: #737373;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.ets-wishlist-product-price {
+  color: #232323;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.ets-wishlist-product-combinations {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.ets-wishlist-product-combinations-text {
+  color: #7a7a7a;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin: 0;
+}
+.ets-wishlist-product-combinations a {
+  color: #7a7a7a;
+  display: block;
+}
+.ets-wishlist-product-addtocart {
+  padding-left: 10px;
+  width: 100%;
+}
+.ets-wishlist-list .buttons-share-wishlist {
+  display: none;
+  position: absolute;
+  width: 165px;
+  margin: 5px 0 0;
+  z-index: 10;
+  top: 100%;
+  right: 50%;
+  transform: translateX(30%);
+}
+.buttons-share-wishlist.show{
+    display:block;
+}
+
+ul.buttons-share-wishlist:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  transform: rotate(-45deg);
+  bottom: 100%;
+  margin-bottom: -5px;
+  background: #fff;
+  right: 30%;
+  margin-right: -5px;
+}
+.ets-wishlist-button-add {
+  align-items: center;
+  background-color: #ffffff;
+  border: medium none;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  min-width: 40px;
+  padding-top: 3px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #999999;
+  transition: all 0.2s ease-out 0s;
+  width: 40px;
+}
+.ets-wishlist-button-add:hover{
+  color: #1d93ab;
+}
+.ets-wishlist-products-container .sort-by-row {
+  align-items: center;
+  display: flex;
+  min-width: 315px;
+}
+.ets-wishlist-products-container .sort-by-row .sort-by {
+  padding: 0;
+}
+.ets-wishlist-products-container .sort-by-row .products-sort-order {
+  padding: 0;
+}
+.ets-wishlist-products-container-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.ets-wishlist-products-container .page-content {
+  background: #fff;
+  padding: 15px;
+}
+.ets-wishlist-products-container .results {
+  padding: 15px;
+  display: inline-block;
+  font-size: 14px;
+}
+.ets-wishlist-products-container .links b, .ets-wishlist-products-container .links a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 28px;
+  font-size: 13px;
+  margin-left: -1px;
+  color: #777;
+}
+.ets-wishlist-products-container .links {
+  display: inline-block;
+  float: right;
+  padding: 8px 15px;
+}
+.ets-wishlist-products-container .links a:hover {
+  background: #eee;
+}
+.ets-wishlist-products-container .links b {
+  background: #24b9d7;
+  color: #fff;
+}
+.ets-wishlist-products-container-header li a {
+  padding: 5px 10px;
+}
+.ets-wishlist-products-container-header .buttons-share-wishlist {
+  margin-top: 20px;
+}
+.buttons-share-wishlist li svg {
+  height: 20px;
+  width: 20px;
+}
+
+
+
+@media (max-width: 991px){
+  .ets-wishlist-products-item {
+    width: 33.33%;
+  }
+}
+@media (max-width: 767px){
+  .ets-wishlist-products-item {
+    width: 100%;
+  }
+  .ets-wishlist-products-container-header h1 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .ets-wishlist-products-container-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ets-wishlist-products-container .sort-by-row {
+    align-items: center;
+    display: flex;
+    min-width: 315px;
+    justify-content: center;
+  }
+}

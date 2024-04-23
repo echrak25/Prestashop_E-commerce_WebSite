@@ -1,0 +1,2 @@
+Hello {sender},
+You have successfully sent a product to your friend {receiver}.

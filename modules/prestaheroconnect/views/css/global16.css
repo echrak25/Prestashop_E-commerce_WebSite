@@ -1,0 +1,6 @@
+body .ph-con-account-info button#btnPhAccount{
+    color: #ffffff;
+}
+body .ph-con-account-info button#btnPhAccount:hover{
+    color: #999999;
+}

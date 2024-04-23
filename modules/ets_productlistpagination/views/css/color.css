@@ -1,0 +1,13 @@
+.ets_plp_pagination a.load_more:hover,
+.ets_plp_pagination .pagination .page-list li.current a,
+.ets_plp_pagination .pagination .page-list li a:hover,
+body .ets_plp_pagination .pagination .page-list li:not(.current) a:hover{
+    color: #ffffff;
+    fill: #ffffff;
+    background: #999999;
+    border-color: #999999;
+    color: ETS_PLP_BUTTON_LABEL_HOVER;
+    fill: ETS_PLP_BUTTON_LABEL_HOVER;
+    background: ETS_PLP_BUTTON_BG_HOVER;
+    border-color: ETS_PLP_BUTTON_BG_HOVER;
+}

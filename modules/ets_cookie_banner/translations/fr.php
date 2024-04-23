@@ -1,0 +1,38 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_7cf649fdc395a3013ea2b3bce432eba1'] = 'Bannière de cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_0c6ee8eb5eb5b2c7406ec6b4af00bedc'] = 'Afficher une bannière demandant le consentement du client pour les cookies utilisés sur la boutique. Entièrement personnalisable - couleurs, positions, boutons, textes, etc.';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_8a15cd534ba62e9cda0cf812385d953d'] = 'Case en bas à gauche';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_4d9f440ed2be50a7a56a48a45419478b'] = 'Case en bas à droite';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_c28a0e55f72be6659cfe3cf7e28018c2'] = 'Barre inférieure';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_8dc295c72c0d1e4f5612a47aad232ef3'] = 'Contenu des cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_2902693bbd214b9c4ae65a9ffd38f5a9'] = 'Nous utilisons des cookies tiers pour améliorer votre expérience de navigation, analyser le trafic du site et personnaliser le contenu et les publicités.';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_f990e553cdc4c29c2efffba33e08a8c7'] = 'En savoir plus';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_b0281326a3fa4820a2475ef6ca922ca8'] = 'Position de la bannière des cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_1a12c29bfbbfbaba5007e94a996c8b43'] = 'Largeur de la bannière des cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_4a856542299ef98f01f36b53524dd663'] = 'Fond de bannière de cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_b0a45305e0d059ad49df314b072f4aea'] = 'Couleur de la bordure de la bannière des cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_2aa7c71746dfd84dbdbcc9cd7a29d403'] = 'Rayon de la bordure de la bannière des cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_9e6965de846567028a0a5ea2e8b65785'] = 'Texte du bouton accepter les cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_1eb49c27fcf769c9a098dba3676b2e68'] = 'Accepter les cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_90c599b1c29354c8d3cac24beb2c9c26'] = 'Couleur du texte du bouton';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_a5a86f2a08ae606d44ed7af31e883d2a'] = 'Couleur de la bordure du bouton';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_626dedb042ac711ca05c22348338e772'] = 'Arrière-plan du bouton';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_b55a25902af832d9365ee4d5d26b716e'] = 'Couleur de survol du texte du bouton';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_8b89919dbed41cb24a4f6c4fc2079467'] = 'Couleur de survol de la bordure du bouton';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_4fd8ae013cad1d362548201c1926c25a'] = 'Couleur de survol de l’arrière-plan du bouton';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_f4e2d44cb013467bb28a453d6b45c21b'] = 'Texte du bouton refuser les cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_83d02dd99fe3810dc29046c99ba2e44e'] = 'Refuser les cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_5d5d508cd15c0c3c14f8a4ac1df9dd9e'] = 'Laisser vide pour ne pas afficher le bouton « Refuser les cookies »';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_c7255d8822d9c79eb92b39449c73ca8d'] = 'Redirection d\'URL lorsque le client choisit « Refuser les cookies »';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_a75e7fda54ac0884c2979fbfac5e23a5'] = '%s est requis';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_980b71cf9afed12458776c2aeb76f38d'] = '%s n\'est pas valide';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_f32bf016310aa8526f73d8c293249a90'] = '%s n\'est pas valide dans %s';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_f4f70727dc34561dfde1a3c529b6205c'] = 'Paramètres';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_c9cc8cce247e49bae79f15173ce97354'] = 'Enregistrer';
+$_MODULE['<{ets_cookie_banner}prestashop>ets_cookie_banner_c888438d14855d7d96a2724ee9c306bd'] = 'Paramètres mis à jour';
+$_MODULE['<{ets_cookie_banner}prestashop>form_00307342a26b9fda8dee8100c21756e9'] = 'Réinitialiser la couleur';
+$_MODULE['<{ets_cookie_banner}prestashop>cookie_banner_a60852f204ed8028c1c58808b746d115'] = 'Accepter les cookies';
+$_MODULE['<{ets_cookie_banner}prestashop>cookie_banner_83d02dd99fe3810dc29046c99ba2e44e'] = 'Refuser les cookies';

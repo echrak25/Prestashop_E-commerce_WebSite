@@ -1,0 +1,3 @@
+<?php //PrestaShop%255CModule%255CBlockWishList%255CController%255CWishlistConfigurationAdminController%2523statisticsAction
+
+return [PHP_INT_MAX, []];

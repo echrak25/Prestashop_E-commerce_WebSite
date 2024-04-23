@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>wizardai</name>
+    <displayName><![CDATA[WizardAI]]></displayName>
+    <version><![CDATA[2.0.10]]></version>
+    <description><![CDATA[AI Content generation powered by OpenAI (ChatGPT) and Mistral. Easily customize content creation with a prompts editor. Use a cron job to generate a large amount of content.]]></description>
+    <author><![CDATA[Gekkode]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

@@ -1,0 +1,192 @@
+.ets-product-specific {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.ets-product-specific .owl-stage-outer,
+.ets-product-specific .owl-item {
+  height: 100%;
+}
+.thumbnail-container .table {
+  display: table;
+  height: 100%;
+}
+.thumbnail-container .product_special_img {
+  width: 40%;
+}
+.ets-product-specific .product-miniature .product-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.ets-product-specific .table-cell {
+  position: relative;
+}
+.ets-product-specific .product-description .comments_note {
+  margin-bottom: 10px;
+}
+.ets-product-specific .product-price-and-shipping {
+  margin-bottom: 10px;
+}
+.ets-product-specific .product-miniature .thumbnail-container {
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  height: 100%;
+  border: none;
+}
+.ets-product-specific .product-miniature {
+  height: 100%;
+  margin-bottom: 0;
+  float: none;
+}
+.ets-product-specific .owl-stage {
+  float: left;
+  height: 100%;
+}
+#ybc_specificprices {
+  border: 1px solid #e7e7e7;
+  height: 100%;
+}
+#ybc_specificprices .products-section-title {
+  position: absolute;
+  top: 0;
+}
+.ets-product-specific .short_description {
+  display: block;
+}
+.ets-product-specific .product-description {
+  text-align: left;
+  width: 60%;
+  padding-bottom: 15px;
+}
+.ets-product-specific .product-miniature .product-title,
+.ets-product-specific .product-price-and-shipping,
+.ets-product-specific .star_content {
+  text-align: left;
+}
+.ybc_countdown {
+  margin-bottom: 60px;
+  padding-top: 50px;
+}
+#ybc_specificprices .owl-nav {
+  right: 15px;
+}
+.ybc_cd_item{
+    float: left;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    width: 25%;
+}
+.ybc_cd_item .number{
+    font-size:  16px;
+    font-weight: normal;
+    color: #929292;
+    float: left;
+    width: 100%;
+    margin-top: 1px;
+    text-align: center;
+}
+.ets_clock {
+  background-color: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  float: left;
+  padding: 11px 0;
+  position: relative;
+  text-align: center;
+  display: none;
+  width: 100%;
+}
+.ets_clock.active{
+    display: block;
+}
+.ets-product-specific .owl-item {
+  display: flexbox;
+  display: -o-flexbox;
+  display: -ms-flexbox;
+  display: -moz-flexbox;
+  display: -webkit-flexbox;
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+}
+.ets-product-specific .discount-percentage {
+  position: absolute;
+  top: 10px!important;
+  left: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 4px 10px;
+}
+.ets-product-specific .thumbnail.product-thumbnail {
+  margin: 0 10px;
+  position: relative;
+}
+.ets-product-specific .product-description .table-cell {
+  padding-right: 30px;
+}
+.ybc_cd_item:not(:last-child) {
+  border-right: 1px solid #e7e7e7;
+}
+@media (max-width: 991px){
+    .ybc_countdown {
+      margin-bottom: 60px;
+      padding-top: 55px;
+      width: 100%;
+      float: left;
+    }
+    .bg-home .homeblog_wrapper {
+      float: left;
+      width: 100%;
+    }
+    #ybc_specificprices {
+      border: 1px solid #e7e7e7;
+      float: left;
+      height: 100%;
+      width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .ets-product-specific .product-description .table-cell {
+      padding-right: 15px;
+    }
+}
+@media (max-width: 479px){
+    .thumbnail-container .product_special_img {
+      width: 100%;
+    }
+    .ets-product-specific .product-description {
+        
+      width: 100%;
+    }
+    .ets-product-specific .product-miniature .thumbnail-container {
+      display: block;
+    }
+    .ets-product-specific .product-description .table-cell {
+      padding: 0 15px;
+      text-align: center;
+    }
+    .ets-product-specific .product-miniature .product-title, .ets-product-specific .product-price-and-shipping, .ets-product-specific .star_content {
+      text-align: center;
+    }
+    #ybc_specificprices .owl-nav {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
